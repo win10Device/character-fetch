@@ -134,3 +134,6 @@ config.json
 json/stats.json
 *backup*
 *.php
+
+#Nano leftovers
+*.save
