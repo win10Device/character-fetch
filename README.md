@@ -21,5 +21,5 @@ To the same one as where the pixiv cookie was made.
 
 <sub>Discord bot invite&emsp;&emsp;&emsp;&nbsp;https://mint.ranrom.net/fetch/bot</sub><br>
 <sub>Discord user bot invite&emsp;&nbsp;https://mint.ranrom.net/fetch/bot/user</sub><br>
-<sub>Terms of Service&emsp;&emsp;&emsp;&emsp;https://mint.ranrom.net/fetch/bot/terms</sub><br>
-<sub>Privacy Polciy&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;https://mint.ranrom.net/fetch/bot/terms</sub><br>
+<sub>Terms of Service&emsp;&emsp;&emsp;&emsp;https://mint.ranrom.net/fetch/terms</sub><br>
+<sub>Privacy Polciy&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;https://mint.ranrom.net/fetch/privacy</sub><br>
