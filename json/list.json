@@ -1,0 +1,2515 @@
+{
+  "genshin": {
+    "value": "Genshin Impact",
+    "characters": {
+      "albedo": {
+        "name": "Albedo",
+        "fetch": "albedo_(genshin_impact)",
+        "pixiv": "アルベド(原神)",
+        "pagemax": [
+          114,
+          48
+        ]
+      },
+      "alhaitham": {
+        "name": "Alhaitham",
+        "fetch": "alhaitham_(genshin_impact)",
+        "pixiv": "アルハイゼン",
+        "pagemax": [
+          140,
+          70
+        ]
+      },
+      "amber": {
+        "name": "Amber",
+        "fetch": "amber_(genshin_impact)",
+        "pixiv": "アンバー(原神)",
+        "pagemax": [
+          149,
+          68
+        ],
+        "nsfw": true
+      },
+      "aratakiitto": {
+        "name": "Arataki Itto",
+        "fetch": "arataki_itto",
+        "pixiv": "荒瀧一斗",
+        "pagemax": [
+          62,
+          28
+        ]
+      },
+      "arlecchino": {
+        "name": "Arlecchino",
+        "fetch": "arlecchino_(genshin_impact)",
+        "pixiv": "アルレッキーノ(原神)",
+        "pagemax": [
+          185,
+          39
+        ],
+        "nsfw": true
+      },
+      "baizhu": {
+        "name": "Baizhu",
+        "fetch": "baizhu_(genshin_impact)",
+        "pixiv": "白朮(原神)",
+        "pagemax": [
+          20,
+          3
+        ]
+      },
+      "barbara": {
+        "name": "Barbara",
+        "fetch": "barbara_(genshin_impact)",
+        "pixiv": "バーバラ(原神)",
+        "pagemax": [
+          182,
+          64
+        ],
+        "nsfw": true
+      },
+      "beidou": {
+        "name": "Beidou",
+        "fetch": "beidou_(genshin_impact)",
+        "pixiv": "北斗(原神)",
+        "pagemax": [
+          96,
+          20
+        ],
+        "nsfw": true
+      },
+      "bennett": {
+        "name": "Bennett",
+        "fetch": "bennett_(genshin_impact)",
+        "pixiv": "ベネット(原神)",
+        "pagemax": [
+          40,
+          13
+        ]
+      },
+      "candace": {
+        "name": "Candace",
+        "fetch": "candace_(genshin_impact)",
+        "pixiv": "キャンディス(原神)",
+        "pagemax": [
+          33,
+          6
+        ]
+      },
+      "charlotte": {
+        "name": "Charlotte",
+        "fetch": "charlotte_(genshin_impact)",
+        "pixiv": "シャルロット(原神)",
+        "pagemax": [
+          31,
+          10
+        ]
+      },
+      "chevreuse": {
+        "name": "Chevreuse",
+        "fetch": "chevreuse_(genshin_impact)",
+        "pixiv": "夏沃蕾",
+        "pagemax": [
+          19,
+          1
+        ]
+      },
+      "chiori": {
+        "name": "Chiori",
+        "fetch": "chiori_(genshin_impact)",
+        "pixiv": "千織(原神)",
+        "pagemax": [
+          52,
+          12
+        ]
+      },
+      "chongyun": {
+        "name": "Chongyun",
+        "fetch": "chongyun_(genshin_impact)",
+        "pixiv": "重雲",
+        "pagemax": [
+          80,
+          46
+        ]
+      },
+      "clorinde": {
+        "name": "Clorinde",
+        "fetch": "clorinde_(genshin_impact)",
+        "pixiv": "クロリンデ",
+        "pagemax": [
+          105,
+          18
+        ],
+        "nsfw": true,
+        "skip": [
+          "boobs",
+          "breasts",
+          "cleavage"
+        ]
+      },
+      "collei": {
+        "name": "Collei",
+        "fetch": "collei_(genshin_impact)",
+        "pixiv": "コレイ(原神)",
+        "pagemax": [
+          66,
+          12
+        ]
+      },
+      "cyno": {
+        "name": "Cyno",
+        "fetch": "cyno_(genshin_impact)",
+        "pixiv": "セノ",
+        "pagemax": [
+          100,
+          46
+        ]
+      },
+      "dehya": {
+        "name": "Dehya",
+        "fetch": "dehya_(genshin_impact)",
+        "pixiv": "ディシア",
+        "pagemax": [
+          78,
+          22
+        ],
+        "nsfw": true
+      },
+      "diluc": {
+        "name": "Diluc",
+        "fetch": "diluc_(genshin_impact)",
+        "pixiv": "Diluc(GenshinImpact)",
+        "pagemax": [
+          155,
+          14
+        ],
+        "nsfw": true
+      },
+      "diona": {
+        "name": "Diona",
+        "fetch": "diona_(genshin_impact)",
+        "pixiv": "ディオナ(原神)",
+        "pagemax": [
+          62,
+          26
+        ]
+      },
+      "dori": {
+        "name": "Dori",
+        "fetch": "dori_(genshin_impact)",
+        "pixiv": "ドリー(原神)",
+        "pagemax": [
+          14,
+          5
+        ]
+      },
+      "emilie": {
+        "name": "Emilie",
+        "fetch": "emilie_(genshin_impact)",
+        "pixiv": "エミリエ",
+        "pagemax": [
+          10,
+          3
+        ]
+      },
+      "eula": {
+        "name": "Eula",
+        "fetch": "eula_(genshin_impact)",
+        "pixiv": "优菈",
+        "pagemax": [
+          287,
+          28
+        ],
+        "nsfw": true
+      },
+      "faruzan": {
+        "name": "Faruzan",
+        "fetch": "faruzan_(genshin_impact)",
+        "pixiv": "ファルザン",
+        "pagemax": [
+          55,
+          30
+        ]
+      },
+      "fischl": {
+        "name": "Fischl",
+        "fetch": "fischl_(genshin_impact)",
+        "pixiv": "フィッシュル(原神)",
+        "pagemax": [
+          186,
+          50
+        ],
+        "nsfw": true
+      },
+      "freminet": {
+        "name": "Freminet",
+        "fetch": "freminet_(genshin_impact)",
+        "pixiv": "フレミネ",
+        "pagemax": [
+          41,
+          20
+        ]
+      },
+      "furina": {
+        "name": "Furina",
+        "fetch": "furina_(genshin_impact)",
+        "pixiv": "フリーナ(原神)",
+        "pagemax": [
+          456,
+          89
+        ],
+        "nsfw": true,
+        "nsfwtag": "+rating:explicit"
+      },
+      "gaming": {
+        "name": "Gaming",
+        "fetch": "gaming_(genshin_impact)",
+        "pixiv": "嘉明",
+        "pagemax": [
+          15,
+          11
+        ]
+      },
+      "ganyu": {
+        "name": "Ganyu",
+        "fetch": "ganyu_(genshin_impact)",
+        "pixiv": "甘雨(原神)",
+        "pagemax": [
+          911,
+          195
+        ]
+      },
+      "gorou": {
+        "name": "Gorou",
+        "fetch": "gorou_(genshin_impact)",
+        "pixiv": "ゴロー(原神)",
+        "pagemax": [
+          57,
+          17
+        ]
+      },
+      "hutao": {
+        "name": "Hu Tao",
+        "fetch": "hu_tao_(genshin_impact)",
+        "pixiv": "HuTao",
+        "pagemax": [
+          587,
+          126
+        ],
+        "nsfw": true
+      },
+      "jean": {
+        "name": "Jean",
+        "fetch": "jean_(genshin_impact)",
+        "pixiv": "ジン(原神)",
+        "pagemax": [
+          179,
+          35
+        ],
+        "nsfw": true
+      },
+      "kachina": {
+        "name": "Kachina",
+        "fetch": "kachina_(genshin_impact)",
+        "pixiv": "Kachina",
+        "pagemax": [
+          21,
+          3
+        ]
+      },
+      "kaedeharakazuha": {
+        "name": "Kaedehara Kazuha",
+        "fetch": "kaedehara_kazuha",
+        "pixiv": "楓原万葉",
+        "pagemax": [
+          183,
+          100
+        ]
+      },
+      "kaeya": {
+        "name": "Kaeya",
+        "fetch": "kaeya_(genshin_impact)",
+        "pixiv": "Kaeya(GenshinImpact)",
+        "pagemax": [
+          123,
+          12
+        ]
+      },
+      "kamisatoayaka": {
+        "name": "Kamisato Ayaka",
+        "fetch": "kamisato_ayaka",
+        "pixiv": "神里綾華",
+        "pagemax": [
+          315,
+          154
+        ],
+        "nsfw": true
+      },
+      "kamisatoayato": {
+        "name": "Kamisato Ayato",
+        "fetch": "kamisato_ayato",
+        "pixiv": "神里綾人",
+        "pagemax": [
+          83,
+          74
+        ]
+      },
+      "kaveh": {
+        "name": "Kaveh",
+        "fetch": "kaveh_(genshin_impact)",
+        "pixiv": "カーヴェ",
+        "pagemax": [
+          104,
+          47
+        ]
+      },
+      "keqing": {
+        "name": "Keqing",
+        "fetch": "keqing_(genshin_impact)",
+        "pixiv": "刻晴(原神)",
+        "pagemax": [
+          376,
+          44
+        ],
+        "nsfw": true
+      },
+      "kinich": {
+        "name": "Kinich",
+        "fetch": "kinich_(genshin_impact)",
+        "pixiv": "キィニチ",
+        "pagemax": [
+          39,
+          23
+        ]
+      },
+      "kirara": {
+        "name": "Kirara",
+        "fetch": "kirara_(genshin_impact)",
+        "pixiv": "綺良々",
+        "pagemax": [
+          66,
+          32
+        ]
+      },
+      "klee": {
+        "name": "Klee",
+        "fetch": "klee_(genshin_impact)",
+        "pixiv": "クレー(原神)",
+        "pagemax": [
+          304,
+          118
+        ],
+        "nsfw": false
+      },
+      "kujousara": {
+        "name": "Kujou Sara",
+        "fetch": "kujou_sara",
+        "pixiv": "九条裟羅",
+        "pagemax": [
+          106,
+          30
+        ],
+        "nsfw": true
+      },
+      "kukishinobu": {
+        "name": "Kuki Shinobu",
+        "fetch": "kuki_shinobu",
+        "pixiv": "久岐忍",
+        "pagemax": [
+          68,
+          25
+        ],
+        "nsfw": true
+      },
+      "layla": {
+        "name": "Layla",
+        "fetch": "layla_(genshin_impact)",
+        "pixiv": "レイラ(原神)",
+        "pagemax": [
+          47,
+          18
+        ]
+      },
+      "lisa": {
+        "name": "Lisa",
+        "fetch": "lisa_(genshin_impact)",
+        "pixiv": "リサ(原神)",
+        "pagemax": [
+          105,
+          19
+        ]
+      },
+      "lynette": {
+        "name": "Lynette",
+        "fetch": "lynette_(genshin_impact)",
+        "pixiv": "Lynette(GenshinImpact)",
+        "pagemax": [
+          92,
+          1
+        ]
+      },
+      "lyney": {
+        "name": "Lyney",
+        "fetch": "lyney_(genshin_impact)",
+        "pixiv": "リネ(原神)",
+        "pagemax": [
+          72,
+          20
+        ]
+      },
+      "mavuika": {
+        "name": "Mavuika",
+        "fetch": "mavuika_(genshin_impact)",
+        "pixiv": "Mavuika",
+        "pagemax": [
+          46,
+          5
+        ]
+      },
+      "mika": {
+        "name": "Mika",
+        "fetch": "Mika_(genshin_impact)",
+        "pixiv": "ミカ(原神)",
+        "pagemax": [
+          14,
+          4
+        ]
+      },
+      "mona": {
+        "name": "Mona",
+        "fetch": "mona_(genshin_impact)",
+        "pixiv": "モナ(原神)",
+        "pagemax": [
+          396,
+          72
+        ],
+        "nsfw": true
+      },
+      "mualani": {
+        "name": "Mualani",
+        "fetch": "mualani_(genshin_impact)",
+        "pixiv": "Mualani",
+        "skip": [
+          "bikini"
+        ],
+        "pagemax": [
+          49,
+          8
+        ]
+      },
+      "nahida": {
+        "name": "Nahida",
+        "fetch": "nahida_(genshin_impact)",
+        "pixiv": "ナヒーダ",
+        "pagemax": [
+          404,
+          185
+        ]
+      },
+      "navia": {
+        "name": "Navia",
+        "fetch": "navia_(genshin_impact)",
+        "pixiv": "ナヒーダ",
+        "pagemax": [
+          97,
+          185
+        ]
+      },
+      "neuvillette": {
+        "name": "Neuvillette",
+        "fetch": "neuvillette_(genshin_impact)",
+        "pixiv": "ヌヴィレット",
+        "pagemax": [
+          108,
+          48
+        ]
+      },
+      "nilou": {
+        "name": "Nilou",
+        "fetch": "nilou_(genshin_impact)",
+        "pixiv": "ニィロウ",
+        "pagemax": [
+          231,
+          84
+        ],
+        "nsfw": false
+      },
+      "ningguang": {
+        "name": "Ningguang",
+        "fetch": "ningguang_(genshin_impact)",
+        "pixiv": "凝光(原神)",
+        "pagemax": [
+          121,
+          13
+        ],
+        "nsfw": true
+      },
+      "noelle": {
+        "name": "Noelle",
+        "fetch": "noelle_(genshin_impact)",
+        "pixiv": "ノエル(原神)",
+        "pagemax": [
+          92,
+          46
+        ],
+        "nsfw": true
+      },
+      "qiqi": {
+        "name": "Qiqi",
+        "fetch": "qiqi_(genshin_impact)",
+        "pixiv": "七七(原神)",
+        "pagemax": [
+          142,
+          49
+        ]
+      },
+      "raiden": {
+        "name": "Raiden",
+        "fetch": "raiden_shogun",
+        "pixiv": "雷電将軍",
+        "pagemax": [
+          759,
+          182
+        ],
+        "nsfw": true
+      },
+      "razor": {
+        "name": "Razor",
+        "fetch": "razor_(genshin_impact)",
+        "pixiv": "レザー(原神)",
+        "pagemax": [
+          48,
+          20
+        ]
+      },
+      "rosaria": {
+        "name": "Rosaria",
+        "fetch": "rosaria_(genshin_impact)",
+        "pixiv": "ロサリア(原神)",
+        "pagemax": [
+          65,
+          18
+        ],
+        "nsfw": true
+      },
+      "sangonomiyakokomi": {
+        "name": "Sangonomiya Kokomi",
+        "fetch": "sangonomiya_kokomi",
+        "pixiv": "珊瑚宮心海",
+        "pagemax": [
+          190,
+          92
+        ],
+        "nsfw": true
+      },
+      "sayu": {
+        "name": "Sayu",
+        "fetch": "sayu_(genshin_impact)",
+        "pixiv": "早柚(原神)",
+        "pagemax": [
+          46,
+          1
+        ]
+      },
+      "sethos": {
+        "name": "Sethos",
+        "fetch": "sethos_(genshin_impact)",
+        "pixiv": "セトス(原神)",
+        "pagemax": [
+          7,
+          1
+        ]
+      },
+      "shenhe": {
+        "name": "Shenhe",
+        "fetch": "shenhe_(genshin_impact)",
+        "pixiv": "申鶴",
+        "pagemax": [
+          282,
+          1
+        ],
+        "nsfw": true
+      },
+      "shikanoinheizou": {
+        "name": "Shikanoin Heizou",
+        "fetch": "shikanoin_heizou",
+        "pixiv": "鹿野院平蔵",
+        "pagemax": [
+          52,
+          1
+        ]
+      },
+      "sigewinne": {
+        "name": "Sigewinne",
+        "fetch": "sigewinne_(genshin_impact)",
+        "pixiv": "シグウィン",
+        "pagemax": [
+          50,
+          1
+        ]
+      },
+      "sucrose": {
+        "name": "Sucrose",
+        "fetch": "sucrose_(genshin_impact)",
+        "pixiv": "スクロース(原神)",
+        "pagemax": [
+          62,
+          1
+        ],
+        "nsfw": true
+      },
+      "tartaglia": {
+        "name": "Tartaglia",
+        "fetch": "tartaglia_(genshin_impact)",
+        "pixiv": "タルタリヤ",
+        "pagemax": [
+          298,
+          1
+        ]
+      },
+      "thoma": {
+        "name": "Thoma",
+        "fetch": "thoma_(genshin_impact)",
+        "pixiv": "トーマ(原神)",
+        "pagemax": [
+          57,
+          1
+        ]
+      },
+      "tighnari": {
+        "name": "Tighnari",
+        "fetch": "tighnari_(genshin_impact)",
+        "pixiv": "ティナリ",
+        "pagemax": [
+          112,
+          1
+        ]
+      },
+      "venti": {
+        "name": "Venti",
+        "fetch": "venti_(genshin_impact)",
+        "pixiv": "ウェンティ(原神)",
+        "pagemax": [
+          331,
+          1
+        ],
+        "nsfw": true
+      },
+      "wanderer": {
+        "name": "Wanderer",
+        "fetch": "wanderer_(genshin_impact)",
+        "pixiv": "放浪者(原神)",
+        "pagemax": [
+          286,
+          1
+        ]
+      },
+      "wriothesley": {
+        "name": "Wriothesley",
+        "fetch": "wriothesley_(genshin_impact)",
+        "pixiv": "リオセスリ",
+        "pagemax": [
+          76,
+          1
+        ]
+      },
+      "xiangling": {
+        "name": "Xiangling",
+        "fetch": "xiangling_(genshin_impact)",
+        "pixiv": "香菱(原神)",
+        "pagemax": [
+          68,
+          1
+        ]
+      },
+      "xianyun": {
+        "name": "Xianyun",
+        "fetch": "xianyun_(genshin_impact)",
+        "pixiv": "Xianyun",
+        "pagemax": [
+          55,
+          1
+        ]
+      },
+      "xiao": {
+        "name": "xiao",
+        "fetch": "xiao_(genshin_impact)",
+        "pixiv": "魈(原神)",
+        "pagemax": [
+          262,
+          1
+        ],
+        "nsfw": true
+      },
+      "xingqiu": {
+        "name": "Xingqiu",
+        "fetch": "xingqiu_(genshin_impact)",
+        "pixiv": "行秋(原神)",
+        "pagemax": [
+          83,
+          1
+        ]
+      },
+      "xinyan": {
+        "name": "Xinyan",
+        "fetch": "xinyan_(genshin_impact)",
+        "pixiv": "行秋(原神)",
+        "pagemax": [
+          27,
+          1
+        ]
+      },
+      "yaemiko": {
+        "name": "Yae Miko",
+        "fetch": "yae_miko",
+        "pixiv": "八重神子",
+        "pagemax": [
+          490,
+          1
+        ],
+        "nsfw": true
+      },
+      "yanfei": {
+        "name": "Yanfei",
+        "fetch": "yanfei_(genshin_impact)",
+        "pixiv": "煙緋(原神)",
+        "pagemax": [
+          102,
+          1
+        ]
+      },
+      "yaoyao": {
+        "name": "Yaoyao",
+        "fetch": "yaoyao_(genshin_impact)",
+        "pixiv": "瑶瑶(原神)",
+        "pagemax": [
+          35,
+          1
+        ]
+      },
+      "yelan": {
+        "name": "Yelan",
+        "fetch": "yelan_(genshin_impact)",
+        "pixiv": "夜蘭",
+        "pagemax": [
+          202,
+          1
+        ],
+        "nsfw": true
+      },
+      "yoimiya": {
+        "name": "Yoimiya",
+        "fetch": "yoimiya_(genshin_impact)",
+        "pixiv": "宵宫",
+        "pagemax": [
+          163,
+          1
+        ]
+      },
+      "yunjin": {
+        "name": "Yun Jin",
+        "fetch": "yun_jin_(genshin_impact)",
+        "pixiv": "云堇",
+        "pagemax": [
+          41,
+          1
+        ]
+      },
+      "zhongli": {
+        "name": "Zhongli",
+        "fetch": "zhongli_(genshin_impact)",
+        "pixiv": "鍾離",
+        "pagemax": [
+          451,
+          1
+        ],
+        "nsfw": true
+      },
+      "lumine": {
+        "name": "Lumine",
+        "fetch": "lumine_(genshin_impact)",
+        "pixiv": "蛍(原神)",
+        "pagemax": [
+          769,
+          1
+        ],
+        "nsfw": true
+      },
+      "aether": {
+        "name": "Aether",
+        "fetch": "aether_(genshin_impact)",
+        "pixiv": "空(原神)",
+        "pagemax": [
+          482,
+          1
+        ],
+        "nsfw": true
+      },
+      "paimon": {
+        "name": "paimon",
+        "fetch": "paimon_(genshin_impact)",
+        "pixiv": "パイモン(原神)",
+        "pagemax": [
+          312,
+          1
+        ]
+      }
+    }
+  },
+  "touhou": {
+    "value": "Touhou",
+    "characters": {
+      "alicemargatroid": {
+        "name": "Alice Margatroid",
+        "fetch": "alice_margatroid",
+        "pixiv": "アリス・マーガトロイド",
+        "pagemax": [
+          1000,
+          866
+        ]
+      },
+      "aunnkomano": {
+        "name": "Aunn Komano",
+        "fetch": "komano_aunn",
+        "pixiv": "高麗野あうん",
+        "pagemax": [
+          94,
+          67
+        ]
+      },
+      "ayashameimaru": {
+        "name": "Aya Shameimaru",
+        "fetch": "shameimaru_aya",
+        "pixiv": "射命丸文",
+        "pagemax": [
+          1000,
+          688
+        ]
+      },
+      "benbentsukumo": {
+        "name": "Benben Tsukumo",
+        "fetch": "tsukumo_benben",
+        "pixiv": "九十九弁々",
+        "pagemax": [
+          78,
+          54
+        ]
+      },
+      "bitenson": {
+        "name": "Biten Son",
+        "fetch": "son_biten",
+        "pixiv": "孫美天",
+        "pagemax": [
+          21,
+          14
+        ]
+      },
+      "byakurenhijiri": {
+        "name": "Byakuren Hijiri",
+        "fetch": "hijiri_byakuren",
+        "pixiv": "聖白蓮",
+        "pagemax": [
+          655,
+          267
+        ]
+      },
+      "chimatatenkyuu": {
+        "name": "Chimata Tenkyuu",
+        "fetch": "tenkyuu_chimata",
+        "pixiv": "天弓千亦",
+        "pagemax": [
+          71,
+          40
+        ]
+      },
+      "chiyaritenkajin": {
+        "name": "Chiyari Tenkajin",
+        "fetch": "tenkajin_chiyari",
+        "pixiv": "天火人ちやり",
+        "pagemax": [
+          30,
+          15
+        ]
+      },
+      "chiyurikitashirakawa": {
+        "name": "Chiyuri Kitashirakawa",
+        "fetch": "kitashirakawa_chiyuri",
+        "pixiv": "北白河ちゆり",
+        "pagemax": [
+          35,
+          26
+        ]
+      },
+      "cirno": {
+        "name": "Cirno",
+        "fetch": "cirno",
+        "pixiv": "琪露诺",
+        "pagemax": [
+          1000,
+          34
+        ]
+      },
+      "daiyousei": {
+        "name": "Daiyousei",
+        "fetch": "daiyousei",
+        "pixiv": "大妖精",
+        "pagemax": [
+          466,
+          375
+        ]
+      },
+      "doremysweet": {
+        "name": "Doremy Sweet",
+        "fetch": "doremy_sweet",
+        "pixiv": "ドレミー・スイート",
+        "pagemax": [
+          177,
+          113
+        ]
+      },
+      "eikaebisu": {
+        "name": "Eika Ebisu",
+        "fetch": "ebisu_eika",
+        "pagemax": [
+          23
+        ]
+      },
+      "eirinyagokoro": {
+        "name": "Eirin Yagokoro",
+        "fetch": "yagokoro_eirin",
+        "pixiv": "八意永琳",
+        "pagemax": [
+          585,
+          189
+        ]
+      },
+      "elis": {
+        "name": "Elis",
+        "fetch": "elis_(touhou)",
+        "pixiv": "エリス",
+        "pagemax": [
+          17,
+          64
+        ]
+      },
+      "ellen": {
+        "name": "Ellen",
+        "fetch": "ellen_(touhou)",
+        "pixiv": "エレン(東方Project)",
+        "pagemax": [
+          24,
+          16
+        ]
+      },
+      "elly": {
+        "name": "Elly",
+        "fetch": "elly_(touhou)",
+        "pagemax": [
+          32
+        ]
+      },
+      "enokomitsugashira": {
+        "name": "Enoko Mitsugashira",
+        "fetch": "mitsugashira_enoko",
+        "pixiv": "三頭慧ノ子",
+        "pagemax": [
+          18,
+          12
+        ]
+      },
+      "flandrescarlet": {
+        "name": "Flandre Scarlet",
+        "fetch": "flandre_scarlet",
+        "pixiv": "フランドール・スカーレット",
+        "pagemax": [
+          1000,
+          1000
+        ]
+      },
+      "fujiwaranomokou": {
+        "name": "Fujiwara no Mokou",
+        "fetch": "fujiwara_no_mokou",
+        "pixiv": "藤原妹紅",
+        "pagemax": [
+          1000,
+          603
+        ]
+      },
+      "gengetsu": {
+        "name": "Gengetsu",
+        "fetch": "gengetsu_(touhou)",
+        "pixiv": "幻月",
+        "pagemax": [
+          30,
+          39
+        ]
+      },
+      "genjii": {
+        "name": "Genjii",
+        "fetch": "genjii_(touhou)",
+        "pagemax": [
+          12
+        ]
+      },
+      "hatanokokoro": {
+        "name": "Hata no Kokoro",
+        "fetch": "hata_no_kokoro",
+        "pixiv": "秦こころ",
+        "pagemax": [
+          336,
+          214
+        ]
+      },
+      "hatatehimekaidou": {
+        "name": "Hatate Himekaidou",
+        "fetch": "himekaidou_hatate",
+        "pixiv": "姫海棠はたて",
+        "pagemax": [
+          371,
+          170
+        ]
+      },
+      "hecatialapislazuli": {
+        "name": "Hecatia Lapislazuli",
+        "fetch": "hecatia_lapislazuli",
+        "pixiv": "ヘカーティア・ラピスラズリ",
+        "pagemax": [
+          244,
+          83
+        ]
+      },
+      "hiedanoakyu": {
+        "name": "Hieda no Akyu",
+        "fetch": "hieda_no_akyuu",
+        "pixiv": "稗田阿求",
+        "pagemax": [
+          277,
+          124
+        ]
+      },
+      "hinakagiyama": {
+        "name": "Hina Kagiyama",
+        "fetch": "kagiyama_hina",
+        "pixiv": "鍵山雛",
+        "pagemax": [
+          515,
+          376
+        ]
+      },
+      "hisamiyomotsu": {
+        "name": "Hisami Yomotsu",
+        "fetch": "yomotsu_hisami",
+        "pixiv": "豫母都日狭美",
+        "pagemax": [
+          31,
+          17
+        ]
+      },
+      "hongmeiling": {
+        "name": "Hong Meiling",
+        "fetch": "hong_meiling",
+        "pixiv": "紅美鈴",
+        "pagemax": [
+          1000,
+          525
+        ]
+      },
+      "hourai": {
+        "name": "Hourai",
+        "fetch": "hourai_girl_(touhou)",
+        "pagemax": [
+          4
+        ]
+      },
+      "ichirinkumoi": {
+        "name": "Ichirin Kumoi",
+        "fetch": "kumoi_ichirin",
+        "pixiv": "雲居一輪",
+        "pagemax": [
+          305,
+          128
+        ]
+      },
+      "ikunagae": {
+        "name": "Iku Nagae",
+        "fetch": "nagae_iku",
+        "pixiv": "永江衣玖",
+        "pagemax": [
+          333,
+          196
+        ]
+      },
+      "jo'onyorigami": {
+        "name": "Jo'on Yorigami",
+        "fetch": "yorigami_jo'on",
+        "pixiv": "女苑",
+        "pagemax": [
+          140,
+          3
+        ]
+      },
+      "junko": {
+        "name": "Junko",
+        "fetch": "junko_(touhou)",
+        "pixiv": "純狐",
+        "pagemax": [
+          280,
+          127
+        ]
+      },
+      "kagerouimaizumi": {
+        "name": "Kagerou Imaizumi",
+        "fetch": "imaizumi_kagerou",
+        "pixiv": "今泉影狼",
+        "pagemax": [
+          431,
+          165
+        ]
+      },
+      "kaguyahouraisan": {
+        "name": "Kaguya Houraisan",
+        "fetch": "houraisan_kaguya",
+        "pixiv": "蓬莱山輝夜",
+        "pagemax": [
+          754,
+          279
+        ]
+      },
+      "kanaanaberal": {
+        "name": "Kana Anaberal",
+        "fetch": "kana_anaberal",
+        "pixiv": "カナ・アナベラル",
+        "pagemax": [
+          25,
+          33
+        ]
+      },
+      "kanakoyasaka": {
+        "name": "Kanako Yasaka",
+        "fetch": "yasaka_kanako",
+        "pixiv": "八坂神奈子",
+        "pagemax": [
+          587,
+          245
+        ]
+      },
+      "kasenibara": {
+        "name": "Kasen Ibaraki",
+        "fetch": "ibaraki_kasen",
+        "pixiv": "茨木華扇",
+        "pagemax": [
+          329,
+          160
+        ]
+      },
+      "keikihaniyasushin": {
+        "name": "Keiki Haniyasushin",
+        "fetch": "haniyasushin_keiki",
+        "pixiv": "埴安神袿姫",
+        "pagemax": [
+          84,
+          59
+        ]
+      },
+      "keinekamishirasawa": {
+        "name": "Keine Kamishirasawa",
+        "fetch": "kamishirasawa_keine",
+        "pixiv": "上白沢慧音",
+        "pagemax": [
+          813,
+          264
+        ]
+      },
+      "kikuri": {
+        "name": "Kikuri",
+        "fetch": "kikuri_(touhou)",
+        "pagemax": [
+          12
+        ]
+      },
+      "kisume": {
+        "name": "Kisume",
+        "fetch": "kisume",
+        "pixiv": "キスメ",
+        "pagemax": [
+          183,
+          111
+        ]
+      },
+      "koakuma": {
+        "name": "Koakuma",
+        "fetch": "koakuma",
+        "pixiv": "小悪魔(東方Project)",
+        "pagemax": [
+          734,
+          46
+        ]
+      },
+      "kogasatatara": {
+        "name": "Kogasa Tatara",
+        "fetch": "tatara_kogasa",
+        "pixiv": "多々良小傘",
+        "pagemax": [
+          833,
+          406
+        ]
+      },
+      "koishikomeiji": {
+        "name": "Koishi Komeiji",
+        "fetch": "komeiji_koishi",
+        "pixiv": "古明地こいし",
+        "pagemax": [
+          1000,
+          1000
+        ]
+      },
+      "komachionozuka": {
+        "name": "Komachi Onozuka",
+        "fetch": "onozuka_komachi",
+        "pixiv": "小野塚小町",
+        "pagemax": [
+          446,
+          209
+        ]
+      },
+      "konngara": {
+        "name": "Konngara",
+        "fetch": "konngara_(touhou)",
+        "pagemax": [
+          27
+        ]
+      },
+      "kotohime": {
+        "name": "Kotohime",
+        "fetch": "kotohime_(touhou)",
+        "pixiv": "小兎姫",
+        "pagemax": [
+          16,
+          14
+        ]
+      },
+      "kurumi": {
+        "name": "Kurumi",
+        "fetch": "kurumi_(touhou)",
+        "pixiv": "くるみ(東方Project)",
+        "pagemax": [
+          22,
+          20
+        ]
+      },
+      "kutakaniwatari": {
+        "name": "Kutaka Niwatari",
+        "fetch": "niwatari_kutaka",
+        "pixiv": "庭渡久侘歌",
+        "pagemax": [
+          86,
+          82
+        ]
+      },
+      "kyoukokasodani": {
+        "name": "Kyouko Kasodani",
+        "fetch": "kasodani_kyouko",
+        "pixiv": "幽谷響子",
+        "pagemax": [
+          309,
+          160
+        ]
+      },
+      "laylaprismriver": {
+        "name": "Layla Prismriver",
+        "fetch": "layla_prismriver",
+        "pixiv": "レイラ・プリズムリバー",
+        "pagemax": [
+          9,
+          7
+        ]
+      },
+      "lettywhiterock": {
+        "name": "Letty Whiterock",
+        "fetch": "letty_whiterock",
+        "pixiv": "レティ・ホワイトロック",
+        "pagemax": [
+          243,
+          149
+        ]
+      },
+      "lilywhite": {
+        "name": "Lily White",
+        "fetch": "lily_white",
+        "pixiv": "リリーホワイト",
+        "pagemax": [
+          200,
+          161
+        ]
+      },
+      "louise": {
+        "name": "Louise",
+        "fetch": "louise_(touhou)",
+        "pixiv": "ルイズ(東方Project)",
+        "pagemax": [
+          17,
+          7
+        ]
+      },
+      "lunasaprismriver": {
+        "name": "Lunasa Prismriver",
+        "fetch": "lunasa_prismriver",
+        "pixiv": "ルナサ・プリズムリバー",
+        "pagemax": [
+          171,
+          71
+        ]
+      },
+      "lyricaprismriver": {
+        "name": "Lyrica Prismriver",
+        "fetch": "lyrica_prismriver",
+        "pixiv": "リリカ・プリズムリバー",
+        "pagemax": [
+          125,
+          56
+        ]
+      },
+      "mai": {
+        "name": "Mai",
+        "fetch": "mai_(touhou)",
+        "pixiv": "マイ(東方Project)",
+        "pagemax": [
+          27,
+          22
+        ]
+      },
+      "maiteireida": {
+        "name": "Mai Teireida",
+        "fetch": "teireida_mai",
+        "pixiv": "丁礼田舞",
+        "pagemax": [
+          74,
+          38
+        ]
+      },
+      "mamizoufutatsuiwa": {
+        "name": "Mamizou Futatsuiwa",
+        "fetch": "futatsuiwa_mamizou",
+        "pixiv": "二ッ岩マミゾウ",
+        "pagemax": [
+          252,
+          100
+        ]
+      },
+      "maribelhearn": {
+        "name": "Maribel Hearn",
+        "fetch": "maribel_hearn",
+        "pixiv": "マエリベリー・ハーン",
+        "pagemax": [
+          447,
+          252
+        ]
+      },
+      "marisakirisame": {
+        "name": "Marisa Kirisame",
+        "fetch": "kirisame_marisa",
+        "pixiv": "霧雨魔理沙",
+        "pagemax": [
+          1000,
+          1000
+        ]
+      },
+      "mayumijoutouguu": {
+        "name": "Mayumi Joutouguu",
+        "fetch": "joutouguu_mayumi",
+        "pixiv": "杖刀偶磨弓",
+        "pagemax": [
+          73,
+          1
+        ]
+      },
+      "medicinemelancholy": {
+        "name": "Medicine Melancholy",
+        "fetch": "medicine_melancholy",
+        "pixiv": "憂鬱",
+        "pagemax": [
+          177,
+          1
+        ]
+      },
+      "meira": {
+        "name": "Meira",
+        "fetch": "meira_(touhou)",
+        "pixiv": "明羅",
+        "pagemax": [
+          20,
+          1
+        ]
+      },
+      "merlinprismriver": {
+        "name": "Merlin Prismriver",
+        "fetch": "merlin_prismriver",
+        "pixiv": "メルラン・プリズムリバー",
+        "pagemax": [
+          128,
+          1
+        ]
+      },
+      "mikegoutokuji": {
+        "name": "Mike Goutokuji",
+        "fetch": "goutokuji_mike",
+        "pixiv": "豪徳寺ミケ",
+        "pagemax": [
+          47,
+          1
+        ]
+      },
+      "mima": {
+        "name": "Mima",
+        "fetch": "mima_(touhou)",
+        "pixiv": "mima",
+        "pagemax": [
+          99,
+          1
+        ]
+      },
+      "minamitsumurasa": {
+        "name": "Minamitsu Murasa",
+        "fetch": "murasa_minamitsu",
+        "pixiv": "村紗水蜜",
+        "pagemax": [
+          354,
+          1
+        ]
+      },
+      "minorikoaki": {
+        "name": "Minoriko Aki",
+        "fetch": "aki_minoriko",
+        "pixiv": "秋穣子",
+        "pagemax": [
+          281,
+          1
+        ]
+      },
+      "miyoiokunoda": {
+        "name": "Miyoi Okunoda",
+        "fetch": "okunoda_miyoi",
+        "pixiv": "奥野田美宵",
+        "pagemax": [
+          31,
+          1
+        ]
+      },
+      "momijiinubashiri": {
+        "name": "Momiji Inubashiri",
+        "fetch": "inubashiri_momiji",
+        "pixiv": "犬走椛",
+        "pagemax": [
+          1000,
+          1
+        ]
+      },
+      "mononobenofuto": {
+        "name": "Mononobe no Futo",
+        "fetch": "mononobe_no_futo",
+        "pixiv": "物部布都",
+        "pagemax": [
+          461,
+          1
+        ]
+      },
+      "mugetsu": {
+        "name": "Mugetsu",
+        "fetch": "mugetsu_(touhou)",
+        "pixiv": "夢月",
+        "pagemax": [
+          26,
+          1
+        ]
+      },
+      "myourenhijiri": {
+        "name": "Myouren Hijiri",
+        "fetch": "hijiri_byakuren",
+        "pixiv": "聖白蓮",
+        "pagemax": [
+          655,
+          1
+        ]
+      },
+      "mystialorelei": {
+        "name": "Mystia Lorelei",
+        "fetch": "mystia_lorelei",
+        "pixiv": "ミスティア・ローレライ",
+        "pagemax": [
+          744,
+          1
+        ]
+      },
+      "narumiyatadera": {
+        "name": "Narumi Yatadera",
+        "fetch": "yatadera_narumi",
+        "pixiv": "矢田寺成美",
+        "pagemax": [
+          42,
+          1
+        ]
+      },
+      "nazrin": {
+        "name": "Nazrin",
+        "fetch": "nazrin",
+        "pixiv": "ナズーリン",
+        "pagemax": [
+          674,
+          1
+        ]
+      },
+      "nemunosakata": {
+        "name": "Nemuno Sakata",
+        "fetch": "sakata_nemuno",
+        "pixiv": "坂田ネムノ",
+        "pagemax": [
+          36,
+          1
+        ]
+      },
+      "nitorikawashiro": {
+        "name": "Nitori Kawashiro",
+        "fetch": "kawashiro_nitori",
+        "pixiv": "河城にとり",
+        "pagemax": [
+          828,
+          1
+        ]
+      },
+      "nuehoujuu": {
+        "name": "Nue Houjuu",
+        "fetch": "houjuu_nue",
+        "pixiv": "封獣ぬえ",
+        "pagemax": [
+          628,
+          1
+        ]
+      },
+      "okinamatara": {
+        "name": "Okina Matara",
+        "fetch": "matara_okina",
+        "pixiv": "摩多羅隠岐奈",
+        "pagemax": [
+          131,
+          1
+        ]
+      },
+      "orange": {
+        "name": "Orange",
+        "fetch": "orange_(touhou)",
+        "pixiv": "オレンジ(東方Project)",
+        "pagemax": [
+          11,
+          1
+        ]
+      },
+      "parseemizuhashi": {
+        "name": "Parsee Mizuhashi",
+        "fetch": "mizuhashi_parsee",
+        "pixiv": "水橋パルスィ",
+        "pagemax": [
+          573,
+          1
+        ]
+      },
+      "patchouliknowledge": {
+        "name": "Patchouli Knowledge",
+        "fetch": "patchouli_knowledge",
+        "pixiv": "パチュリー・ノーレッジ",
+        "pagemax": [
+          1000,
+          1
+        ]
+      },
+      "raikohorikawa": {
+        "name": "Raiko Horikawa",
+        "fetch": "horikawa_raiko",
+        "pixiv": "堀川雷鼓",
+        "pagemax": [
+          95,
+          1
+        ]
+      },
+      "ranyakumo": {
+        "name": "Ran Yakumo",
+        "fetch": "yakumo_ran",
+        "pixiv": "八雲藍",
+        "pagemax": [
+          1000,
+          1
+        ]
+      },
+      "reimuhakurei": {
+        "name": "Reimu Hakurei",
+        "fetch": "hakurei_reimu",
+        "pixiv": "博麗霊夢",
+        "pagemax": [
+          1000,
+          1
+        ]
+      },
+      "reisenudongeininaba": {
+        "name": "Reisen Udongein Inaba",
+        "fetch": "reisen_udongein_inaba",
+        "pixiv": "鈴仙・優曇華院・イナバ",
+        "pagemax": [
+          1000,
+          1
+        ]
+      },
+      "remiliascarlet": {
+        "name": "Remilia Scarlet",
+        "fetch": "remilia_scarlet",
+        "pixiv": "レミリア・スカーレット",
+        "pagemax": [
+          1000,
+          1
+        ]
+      },
+      "renkousami": {
+        "name": "Renko Usami",
+        "fetch": "usami_renko",
+        "pixiv": "宇佐見蓮子",
+        "pagemax": [
+          463,
+          1
+        ]
+      },
+      "rika": {
+        "name": "Rika",
+        "fetch": "rika_(touhou)",
+        "pixiv": "里香(東方Project)",
+        "pagemax": [
+          15,
+          1
+        ]
+      },
+      "rikakoasakura": {
+        "name": "Rikako Asakura",
+        "fetch": "asakura_rikako",
+        "pixiv": "朝倉理香子",
+        "pagemax": [
+          17,
+          1
+        ]
+      },
+      "ringo": {
+        "name": "Ringo",
+        "fetch": "ringo_(touhou)",
+        "pixiv": "鈴瑚",
+        "pagemax": [
+          91,
+          55
+        ]
+      },
+      "rinkaenbyou": {
+        "name": "Rin Kaenbyou",
+        "fetch": "kaenbyou_rin",
+        "pixiv": "火焔猫燐",
+        "pagemax": [
+          972,
+          298
+        ],
+        "exclude_tags": [
+          "large_breasts"
+        ]
+      },
+      "rinsatsuki": {
+        "name": "Rin Satsuki",
+        "fetch": "satsuki_rin",
+        "pixiv": "冴月麟",
+        "pagemax": [
+          15,
+          21
+        ]
+      },
+      "rinnosukemorichika": {
+        "name": "Rinnosuke Morichika",
+        "fetch": "morichika_rinnosuke",
+        "pagemax": [
+          480
+        ]
+      },
+      "rumia": {
+        "name": "Rumia",
+        "fetch": "rumia",
+        "pixiv": "ルーミア",
+        "pagemax": [
+          959,
+          1000
+        ]
+      },
+      "ruukoto": {
+        "name": "Ruukoto",
+        "fetch": "ruukoto",
+        "pixiv": "る〜こと",
+        "pagemax": [
+          9,
+          4
+        ]
+      },
+      "sagumekishin": {
+        "name": "Sagume Kishin",
+        "fetch": "kishin_sagume",
+        "pixiv": "稀神サグメ",
+        "pagemax": [
+          209,
+          111
+        ]
+      },
+      "saigyouayakashi": {
+        "name": "Saigyou Ayakashi",
+        "fetch": "saigyou_ayakashi",
+        "pixiv": "西行妖",
+        "pagemax": [
+          21,
+          6
+        ]
+      },
+      "sakikurokoma": {
+        "name": "Saki Kurokoma",
+        "fetch": "kurokoma_saki",
+        "pixiv": "驪駒早鬼",
+        "pagemax": [
+          96,
+          50
+        ]
+      },
+      "sakuyaizayoi": {
+        "name": "Sakuya Izayoi",
+        "fetch": "izayoi_sakuya",
+        "pixiv": "十六夜咲夜",
+        "pagemax": [
+          1000,
+          986
+        ]
+      },
+      "sanaekochiya": {
+        "name": "Sanae Kochiya",
+        "fetch": "kochiya_sanae",
+        "pixiv": "東風谷早苗",
+        "pagemax": [
+          1000,
+          762
+        ]
+      },
+      "sannyokomakusa": {
+        "name": "Sannyo Komakusa",
+        "fetch": "komakusa_sannyo",
+        "pixiv": "駒草山如",
+        "pagemax": [
+          22,
+          12
+        ]
+      },
+      "sara": {
+        "name": "Sara",
+        "fetch": "sara_(touhou)",
+        "pixiv": "サラ(東方Project)",
+        "pagemax": [
+          15,
+          4
+        ]
+      },
+      "sariel": {
+        "name": "Sariel",
+        "fetch": "sariel_(touhou)",
+        "pagemax": [
+          23
+        ]
+      },
+      "satononishida": {
+        "name": "Satono Nishida",
+        "fetch": "nishida_satono",
+        "pixiv": "爾子田里乃",
+        "pagemax": [
+          76,
+          35
+        ]
+      },
+      "satorikomeiji": {
+        "name": "Satori Komeiji",
+        "fetch": "komeiji_satori",
+        "pixiv": "古明地さとり",
+        "pagemax": [
+          1000,
+          761
+        ]
+      },
+      "seigakaku": {
+        "name": "Seiga Kaku",
+        "fetch": "kaku_seiga",
+        "pixiv": "霍青娥",
+        "pagemax": [
+          360,
+          153
+        ]
+      },
+      "seijakijin": {
+        "name": "Seija Kijin",
+        "fetch": "kijin_seija",
+        "pixiv": "鬼人正邪",
+        "pagemax": [
+          291,
+          175
+        ]
+      },
+      "seiran": {
+        "name": "Seiran",
+        "fetch": "seiran_(touhou)",
+        "pixiv": "清蘭",
+        "pagemax": [
+          107,
+          112
+        ]
+      },
+      "sekibanki": {
+        "name": "Sekibanki",
+        "fetch": "sekibanki",
+        "pixiv": "赤蛮奇",
+        "pagemax": [
+          285,
+          172
+        ]
+      },
+      "shanghai": {
+        "name": "Shanghai",
+        "fetch": "shanghai_doll",
+        "pixiv": "上海人形",
+        "pagemax": [
+          453,
+          94
+        ]
+      },
+      "shikieikiyamaxanadu": {
+        "name": "Shikieiki Yamaxanadu",
+        "fetch": "shiki_eiki",
+        "pixiv": "Yamaxanadu",
+        "pagemax": [
+          453,
+          1
+        ]
+      },
+      "shingyoku": {
+        "name": "Shingyoku",
+        "fetch": "shingyoku_(touhou)",
+        "pixiv": "シンギョク",
+        "pagemax": [
+          12,
+          11
+        ]
+      },
+      "shinki": {
+        "name": "Shinki",
+        "fetch": "shinki_(touhou)",
+        "pixiv": "神綺",
+        "pagemax": [
+          106,
+          66
+        ]
+      },
+      "shinmyoumarusukuna": {
+        "name": "Shinmyoumaru Sukuna",
+        "fetch": "sukuna_shinmyoumaru",
+        "pixiv": "少名針妙丸",
+        "pagemax": [
+          254,
+          137
+        ]
+      },
+      "shionyorigami": {
+        "name": "Shion Yorigami",
+        "fetch": "yorigami_shion",
+        "pixiv": "依神紫苑",
+        "pagemax": [
+          166,
+          101
+        ]
+      },
+      "shizuhaaki": {
+        "name": "Shizuha Aki",
+        "fetch": "aki_shizuha",
+        "pixiv": "秋静葉",
+        "pagemax": [
+          249,
+          167
+        ]
+      },
+      "shoutoramaru": {
+        "name": "Shou Toramaru",
+        "fetch": "toramaru_shou",
+        "pixiv": "寅丸星",
+        "pagemax": [
+          393,
+          280
+        ]
+      },
+      "soganotojiko": {
+        "name": "Soga no Tojiko",
+        "fetch": "soga_no_tojiko",
+        "pixiv": "蘇我屠自古",
+        "pagemax": [
+          318,
+          162
+        ]
+      },
+      "sokrates": {
+        "name": "Sokrates",
+        "fetch": "sokrates_(touhou)",
+        "pagemax": [
+          12
+        ]
+      },
+      "starsapphire": {
+        "name": "Star Sapphire",
+        "fetch": "star_sapphire",
+        "pixiv": "スターサファイア",
+        "pagemax": [
+          162,
+          75
+        ]
+      },
+      "suikaibuki": {
+        "name": "Suika Ibuki",
+        "fetch": "ibuki_suika",
+        "pixiv": "伊吹萃香",
+        "pagemax": [
+          700,
+          338
+        ]
+      },
+      "sumirekousami": {
+        "name": "Sumireko Usami",
+        "fetch": "usami_sumireko",
+        "pixiv": "宇佐見菫子",
+        "pagemax": [
+          168,
+          74
+        ]
+      },
+      "sunnymilk": {
+        "name": "Sunny Milk",
+        "fetch": "sunny_milk",
+        "pixiv": "サニーミルク",
+        "pagemax": [
+          149,
+          78
+        ]
+      },
+      "suwakomoriya": {
+        "name": "Suwako Moriya",
+        "fetch": "moriya_suwako",
+        "pixiv": "洩矢諏訪子",
+        "pagemax": [
+          948,
+          491
+        ]
+      },
+      "takaneyamashiro": {
+        "name": "Takane Yamashiro",
+        "fetch": "yamashiro_takane",
+        "pixiv": "山城たかね",
+        "pagemax": [
+          28,
+          21
+        ]
+      },
+      "tenshihinanawi": {
+        "name": "Tenshi Hinanawi",
+        "fetch": "hinanawi_tenshi",
+        "pixiv": "比那名居天子",
+        "pagemax": [
+          800,
+          469
+        ]
+      },
+      "tewiinaba": {
+        "name": "Tewi Inaba",
+        "fetch": "inaba_tewi",
+        "pixiv": "因幡てゐ",
+        "pagemax": [
+          704,
+          300
+        ]
+      },
+      "tokiko": {
+        "name": "Tokiko",
+        "fetch": "tokiko_(touhou)",
+        "pixiv": "朱鷺子",
+        "pagemax": [
+          70,
+          49
+        ]
+      },
+      "toyosatomiminomiko": {
+        "name": "Toyosatomimi no Miko",
+        "fetch": "toyosatomimi_no_miko",
+        "pixiv": "Toyosatomimi",
+        "pagemax": [
+          507,
+          1
+        ]
+      },
+      "unzan": {
+        "name": "Unzan",
+        "fetch": "unzan",
+        "pixiv": "雲山",
+        "pagemax": [
+          136,
+          63
+        ]
+      },
+      "urumiushizaki": {
+        "name": "Urumi Ushizaki",
+        "fetch": "ushizaki_urumi",
+        "pixiv": "牛崎潤美",
+        "pagemax": [
+          45,
+          22
+        ]
+      },
+      "utsuhoreiuji": {
+        "name": "Utsuho Reiuji",
+        "fetch": "reiuji_utsuho",
+        "pixiv": "霊烏路空",
+        "pagemax": [
+          906,
+          437
+        ]
+      },
+      "wakasagihime": {
+        "name": "Wakasagihime",
+        "fetch": "wakasagihime",
+        "pixiv": "わかさぎ姫",
+        "pagemax": [
+          212,
+          113
+        ]
+      },
+      "watatsukinotoyohime": {
+        "name": "Watatsuki no Toyohime",
+        "fetch": "watatsuki_no_toyohime",
+        "pixiv": "綿月豊姫",
+        "pagemax": [
+          61,
+          33
+        ]
+      },
+      "watatsukinoyorihime": {
+        "name": "Watatsuki no Yorihime",
+        "fetch": "watatsuki_no_yorihime",
+        "pixiv": "綿月依姫",
+        "pagemax": [
+          86,
+          50
+        ]
+      },
+      "wrigglenightbug": {
+        "name": "Wriggle Nightbug",
+        "fetch": "wriggle_nightbug",
+        "pagemax": [
+          458
+        ]
+      },
+      "yachiekicchou": {
+        "name": "Yachie Kicchou",
+        "fetch": "kicchou_yachie",
+        "pixiv": "吉弔八千慧",
+        "pagemax": [
+          124,
+          73
+        ]
+      },
+      "yamamekurodani": {
+        "name": "Yamame Kurodani",
+        "fetch": "kurodani_yamame",
+        "pixiv": "黒谷ヤマメ",
+        "pagemax": [
+          311,
+          167
+        ]
+      },
+      "yatsuhashitsukumo": {
+        "name": "Yatsuhashi Tsukumo",
+        "fetch": "tsukumo_yatsuhashi",
+        "pixiv": "九十九八橋",
+        "pagemax": [
+          56,
+          46
+        ]
+      },
+      "yoshikamiyako": {
+        "name": "Yoshika Miyako",
+        "fetch": "miyako_yoshika",
+        "pixiv": "宮古芳香",
+        "pagemax": [
+          311,
+          178
+        ]
+      },
+      "youkikonpaku": {
+        "name": "Youki Konpaku",
+        "fetch": "konpaku_youki",
+        "pixiv": "魂魄妖夢",
+        "pagemax": [
+          41,
+          951
+        ]
+      },
+      "youmukonpaku": {
+        "name": "Youmu Konpaku",
+        "fetch": "konpaku_youmu",
+        "pixiv": "魂魄妖夢",
+        "pagemax": [
+          1000,
+          951
+        ]
+      },
+      "yukariyakumo": {
+        "name": "Yukari Yakumo",
+        "fetch": "yakumo_yukari",
+        "pixiv": "八雲紫",
+        "pagemax": [
+          1000,
+          666
+        ]
+      },
+      "yuki": {
+        "name": "Yuki",
+        "fetch": "yuki_(touhou)",
+        "pixiv": "ユキ(東方Project)",
+        "pagemax": [
+          23,
+          9
+        ]
+      },
+      "yumeko": {
+        "name": "Yumeko",
+        "fetch": "yumeko_(touhou)",
+        "pagemax": [
+          43
+        ]
+      },
+      "yumemiokazaki": {
+        "name": "Yumemi Okazaki",
+        "fetch": "okazaki_yumemi",
+        "pixiv": "岡崎夢美",
+        "pagemax": [
+          54,
+          56
+        ]
+      },
+      "yuugenmagan": {
+        "name": "YuugenMagan",
+        "fetch": "yuugenmagan",
+        "pixiv": "ユウゲンマガン",
+        "pagemax": [
+          9,
+          7
+        ]
+      },
+      "yuugihoshiguma": {
+        "name": "Yuugi Hoshiguma",
+        "fetch": "hoshiguma_yuugi",
+        "pixiv": "星熊勇儀",
+        "pagemax": [
+          478,
+          182
+        ]
+      },
+      "yuukakazami": {
+        "name": "Yuuka Kazami",
+        "fetch": "kazami_yuuka",
+        "pixiv": "風見幽香",
+        "pagemax": [
+          899,
+          514
+        ]
+      },
+      "yuyukosaigyouji": {
+        "name": "Yuyuko Saigyouji",
+        "fetch": "saigyouji_yuyuko",
+        "pixiv": "西行寺幽々子",
+        "pagemax": [
+          1000,
+          482
+        ]
+      },
+      "zanmunippaku": {
+        "name": "Zanmu Nippaku",
+        "fetch": "nippaku_zanmu",
+        "pixiv": "日白残無",
+        "pagemax": [
+          22,
+          15
+        ]
+      }
+    }
+  },
+  "toradora": {
+    "value": "Toradora!",
+    "characters": {
+      "taigaaisaka": {
+        "name": "Taiga Aisaka",
+        "fetch": "aisaka_taiga",
+        "pagemax": [
+          159
+        ]
+      },
+      "ryujitakasu": {
+        "name": "Ryuji Takasu",
+        "fetch": "takasu_ryuuji",
+        "pagemax": [
+          34
+        ]
+      },
+      "kushiedaminori": {
+        "name": "Kushieda Minori",
+        "fetch": "kushieda_minori",
+        "pagemax": [
+          29
+        ]
+      },
+      "kawashimaami": {
+        "name": "Kawashima Ami",
+        "fetch": "kawashima_ami",
+        "pagemax": [
+          36
+        ]
+      }
+    }
+  },
+  "oshinoko": {
+    "value": "Oshi No Ko",
+    "characters": {
+      "hoshinoai": {
+        "name": "Hoshino Ai",
+        "fetch": "hoshino_ai_(oshi_no_ko)",
+        "pagemax": [
+          null
+        ]
+      },
+      "hoshinoruby": {
+        "name": "Hoshino Ruby",
+        "fetch": "hoshino_ruby",
+        "pagemax": [
+          79
+        ]
+      },
+      "arimakana": {
+        "name": "Arima Kana",
+        "fetch": "arima_kana",
+        "pagemax": [
+          149
+        ]
+      },
+      "kurokawaakane": {
+        "name": "Kurokawa Akane",
+        "fetch": "kurokawa_akane",
+        "pagemax": [
+          45
+        ]
+      },
+      "memcho": {
+        "name": "Memcho",
+        "fetch": "memcho",
+        "pagemax": [
+          23
+        ]
+      }
+    }
+  },
+  "konosuba": {
+    "value": "KonoSuba",
+    "characters": {
+      "megumin": {
+        "name": "Megumin",
+        "fetch": "megumin",
+        "pagemax": [
+          414,
+          392
+        ],
+        "nsfw": false
+      }
+    }
+  },
+  "lucky_star": {
+    "value": "Lucky Star",
+    "characters": {
+      "konata": {
+        "name": "Konata",
+        "fetch": "izumi_konata",
+        "pagemax": [
+          277,
+          270
+        ],
+        "nsfw": false
+      }
+    }
+  },
+  "neptunia": {
+    "value": "Hyperdimension Neptunia",
+    "characters": {
+      "blanc": {
+        "name": "Blanc",
+        "fetch": "blanc_(neptunia)",
+        "pagemax": [
+          69,
+          69
+        ],
+        "nsfw": false
+      }
+    }
+  },
+  "my_dress_up_darling": {
+    "value": "My Dress up Darling",
+    "characters": {
+      "kitagawa": {
+        "name": "Kitagawa",
+        "fetch": "kitagawa_marin",
+        "pagemax": [
+          219,
+          208
+        ],
+        "nsfw": false
+      }
+    }
+  },
+  "neon_genesis": {
+    "value": "Neon Genesis",
+    "characters": {
+      "rei": {
+        "name": "Rei",
+        "fetch": "ayanami_rei",
+        "pagemax": [
+          436,
+          420
+        ],
+        "nsfw": false
+      }
+    }
+  },
+  "jojo": {
+    "value": "JoJo's Bizarre Adventure",
+    "characters": {
+      "johnnyjoestar": {
+        "name": "Johnny Joestar",
+        "fetch": "johnny_joestar",
+        "pixiv": "ジョニィ・ジョースター",
+        "pagemax": [
+          98,
+          49
+        ]
+      }
+    }
+  },
+  "uncategorized": {
+    "value": "uncategorized",
+    "characters": {
+      "miku": {
+        "name": "Miku",
+        "fetch": "hatsune_miku",
+        "pixiv": "初音ミク",
+        "pagemax": [
+          1000,
+          1000
+        ],
+        "nsfw": false
+      },
+      "yukihana": {
+        "name": "Yukihana",
+        "fetch": "yukihana_lamy",
+        "pagemax": [
+          248,
+          1
+        ],
+        "nsfw": true,
+        "skip": [
+          "loli",
+          "boobs",
+          "large_breasts",
+          "thighs",
+          "bare_solders"
+        ]
+      },
+      "teto": {
+        "name": "Teto",
+        "fetch": "kasane_teto",
+        "pagemax": [
+          327,
+          198
+        ],
+        "nsfw": false
+      },
+      "tohsaka": {
+        "name": "Tohsaka",
+        "fetch": "tohsaka_rin",
+        "pagemax": [
+          450,
+          100
+        ],
+        "nsfw": true
+      },
+      "artoria": {
+        "name": "Artoria",
+        "fetch": "artoria_pendragon_(fate)",
+        "pagemax": [
+          1000,
+          1000
+        ],
+        "nsfw": false
+      },
+      "yashiro": {
+        "name": "Yashiro",
+        "fetch": "yashiro_nene",
+        "pagemax": [
+          12,
+          11
+        ],
+        "nsfw": false
+      },
+      "yumeko": {
+        "name": "Yumeko",
+        "fetch": "jabami_yumeko",
+        "pagemax": [
+          21,
+          21
+        ],
+        "nsfw": false
+      },
+      "zerotwo": {
+        "name": "Zero Two",
+        "fetch": "zero_two_(darling_in_the_franxx)",
+        "pagemax": [
+          209,
+          207
+        ],
+        "nsfw": false
+      },
+      "aozaki": {
+        "name": "Aozaki",
+        "fetch": "aozaki_aoko",
+        "pagemax": [
+          66,
+          62
+        ]
+      },
+      "arcueidbrunestud": {
+        "name": "Arcueid Brunestud",
+        "fetch": "arcueid_brunestud",
+        "pixiv": "アルクェイド・ブリュンスタッド",
+        "pagemax": [
+          154,
+          50
+        ]
+      },
+      "kuonjialice": {
+        "name": "Kuonji Alice",
+        "fetch": "kuonji_alice",
+        "pagemax": [
+          30
+        ]
+      }
+    }
+  }
+}
