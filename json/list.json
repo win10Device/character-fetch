@@ -2459,6 +2459,12 @@
         ],
         "nsfw": false
       },
+      "caren": {
+        "name": "caren",
+        "fetch": "caren_hortensia",
+        "pixiv": "カレン・オルテンシア",
+        "pagemax": [69]
+      },
       "yashiro": {
         "name": "Yashiro",
         "fetch": "yashiro_nene",
