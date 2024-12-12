@@ -20,7 +20,7 @@ https://github.com/win10Device/character-fetch/blob/ab8fabaa11f4cb95315069633ede
 To the same one as where the pixiv cookie was made.
 
 
-<sub>Discord bot invite&emsp;&emsp;&emsp;&nbsp;https://mint.ranrom.net/fetch/bot</sub><br>
+<sub>Discord bot invite&emsp;&emsp;&emsp;&nbsp;https://mint.ranrom.net/fetch/bot/</sub><br>
 <sub>Discord user bot invite&emsp;&nbsp;https://mint.ranrom.net/fetch/bot/user</sub><br>
 <sub>Terms of Service&emsp;&emsp;&emsp;&emsp;https://mint.ranrom.net/fetch/terms</sub><br>
 <sub>Privacy Polciy&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;https://mint.ranrom.net/fetch/privacy</sub><br>
