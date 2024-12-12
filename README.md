@@ -16,6 +16,7 @@ Create config.json
 }
 ```
 The pixiv cookie is the literal cookie/header that would be used pixiv.net, e.g. `PHPSESSID=whatever; device_id=whatever;`, it's also recommended to change the user agent here: https://github.com/win10Device/character-fetch/blob/8148879eb00920381938c1bd1e63405a0c77847f/commands/utility/fetch.js#L113
+https://github.com/win10Device/character-fetch/blob/ab8fabaa11f4cb95315069633edea7f8d0db2ce5/index.js#L36
 To the same one as where the pixiv cookie was made.
 
 
