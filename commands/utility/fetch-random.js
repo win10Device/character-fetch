@@ -20,7 +20,6 @@ async function fetch() {
   while(i <= 10) {
     const n = crypto.randomInt(1, 1000);
     var url = `https://danbooru.donmai.us/posts.json?login=${config.danbooru.usr}&api_key=${config.danbooru.key}&page=${n}&rating=g`;
-    //console.log(i);
     item.count = i;
     const instance = axios.create({
       baseURL: url,
@@ -29,6 +28,7 @@ async function fetch() {
     });
     var response = await instance.get(url);
     if(response.status == 200) {
+      //TODO: Fix phrasing for Artist and Source on fetch-random
       response.data.forEach((item,index,arr) => {
         banned_tags.normal.forEach((tag) => {
           if(item.tag_string.includes(tag)) {
