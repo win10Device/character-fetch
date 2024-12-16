@@ -37,7 +37,7 @@ async function fetchDanbooru(character, char_cache, nsfw) {
       var bannedtags = banned_tags.normal.slice();
       if (typeof(c.exclude_tags) !== 'undefined') {
         bannedtags.forEach((item,index,arr) => {
-          if (c.exclude_tags.includes(item)) delete bannedtags[index];
+          if (c.exclude_tags.includes(istem)) delete bannedtags[index];
         });
       }
       response.data.forEach((item,index,arr) => {
@@ -87,6 +87,90 @@ async function fetchDanbooru(character, char_cache, nsfw) {
     return item;
   }
 }
+
+async function fetchGelbooru(character, char_cache, nsfw) {
+  var i = 0;
+  var blocked = [];
+  var key = Object.keys(char_cache).find(item =>(typeof char_cache[item].characters[character]!=='undefined'));
+  if (typeof(key) === 'undefined') {
+    return null;
+  }
+  var c = char_cache[key].characters[character];
+  if (typeof(c.gelbooru) !== 'undefined' && !c.gelbooru) {
+    console.log("Gelbooru was set to false on this character - passing on to Danbooru fetcher");
+    return await fetchDanbooru(character, char_cache, nsfw);
+  }
+  console.log(`Gelbooru fetch - ${c.name}`);
+  var item = { data: null, blocked: [], count: 0 }
+  var pagemax = (typeof(c.pixiv) === 'undefined') ? c.pagemax[1] : c.pagemax[2];
+  //pagemax = 20; //Test
+  while(i <= 10) {
+    const n = (pagemax > 1) ? crypto.randomInt(1, pagemax) : 1;
+    var url = `https://gelbooru.com/index.php?page=dapi&s=post&q=index&json=1&pid=${n}&tags=${c.fetch}+rating%3ageneral`;
+
+    item.count = i;
+    const instance = axios.create({
+      baseURL: url,
+      timeout: 5000,
+      headers: {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:130.0) Gecko/20100101 Firefox/130.0', 'Content-Type': 'application/json' }
+    });
+    var response = await instance.get(url);
+    if(response.status == 200) {
+      var bannedtags = banned_tags.normal.slice();
+      if (typeof(c.exclude_tags) !== 'undefined') {
+        bannedtags.forEach((item,index,arr) => {
+          if (c.exclude_tags.includes(item)) delete bannedtags[index];
+        });
+      }
+      response.data.post.forEach((item,index,arr) => {
+        bannedtags.forEach((tag) => {
+          if(item.tags.includes(tag)) {
+            delete response.data.post[index];
+            blocked.push(tag);
+          }
+        });
+        if (!(["jpg","jpeg","gif","png","webp"]).includes(item.file_url)) delete response.data[index];
+        if (item.tags.includes("comic")) delete response.data[index];
+//        if ((item.tag_string_artist+"").startsWith("banned_artist")) delete response.data[index];
+      });
+      response.data.post = response.data.post.filter(item => (typeof(item.id)!=='undefined'));
+      item.blocked = blocked;
+      if(response.data.post.length<=0)i++;
+      else {
+        var thing = response.data.post[(response.data.post.length > 1) ? crypto.randomInt(1, response.data.post.length) : 1];
+        if (typeof(thing) === 'undefined') {
+          i++;
+        } else {
+/*
+          var artist = "";
+          if (thing.tag_string_artist.includes("\n")) {
+            thing.tag_string_artist.forEach(function(item) {
+              artist =+ `[${item}](https://danbooru.donmai.us/posts?tags=${encodeURIComponent(item)}&z=1)\n`
+            });
+          } else {*/
+            artist = `["${encodeURIComponent(thing.owner)}"](https://gelbooru.com/index.php?page=account&s=profile&id=${thing.creator_id})`;
+//          }
+          item.data = {
+            artist: artist,
+            source: ((thing.source+"").startsWith("http")) ? (`[url](${thing.source})`) : `[url](https://gelbooru.com/index.php?page=post&s=view&id=${thing.id})`,
+            uri: `https://gelbooru.com/index.php?page=post&s=view&id=${thing.id}`,
+            img: thing.file_url
+          };
+          return item;
+          break;
+        }
+      }
+    } else {
+      i++;
+    }
+    delete response;
+  }
+  if(i >= 10) {
+    item.count = i;
+    return item;
+  }
+}
+
 async function fetchPixiv(character, char_cache, nsfw) {
   var i = 0;
   var blocked = [];
@@ -153,6 +237,23 @@ async function fetchPixiv(character, char_cache, nsfw) {
     return item;
   }
 }
+async function getRandom(a, b, c) {
+  var n = getRandomInt(1,100);
+  switch (true) {
+    case (n < 33):
+      console.log(1);
+      return await fetchDanbooru(a, b, c);
+      break;
+    case (n >= 33 && n < 66):
+      console.log(2);
+      return await fetchPixiv(a, b, c);
+      break;
+    case (n >= 66 && n <= 100):
+      console.log(3);
+      return await fetchGelbooru(a, b, c);
+      break;
+  }
+}
 module.exports = {
         data: new SlashCommandBuilder()
 	.setName('fetch')
@@ -176,7 +277,8 @@ module.exports = {
             //var b = interaction.options.getString('profile');
             const message = await interaction.deferReply({ ephemeral: false, fetchReply: true });
             if (a !== null) {
-              var char = (getRandomInt(1,100) > 50) ? await fetchDanbooru(a, list, false) :  await fetchPixiv(a, list, false);
+//              var char = (getRandomInt(1,100) > 50) ? await fetchDanbooru(a, list, false) :  await fetchPixiv(a, list, false);
+              var char = await getRandom(a, list, false);
               if (char !== null) {
                 stats.general.lifetime_fetch += char.count + 1;
                 stats.general.lifetime_block += char.blocked.length;
@@ -249,19 +351,28 @@ module.exports = {
                 }
               } else {
                 var emote = "";
-
-                switch (Math.floor(Math.random() * 2)) {
-                  case 0:
-                    emote = "<:5944toradora1:1277132596286849177>";
+                switch(a) {
+                  case "fuck you":
+                    interaction.editReply({content: `Hey!\n-# Screw you man... rude...`});
                     break;
-                  case 1:
-                    emote = "<:furinathink:1277138364755218507>";
+                  case "n3ptune":
+                    interaction.editReply({content: `https://mint.ranrom.net/profile/531139663096840192/card/`});
                     break;
-                  case 2:
-                    emote = "<:c5iwasAsuna:1277135352145907794>";
+                  default:
+                    switch (Math.floor(Math.random() * 2)) {
+                      case 0:
+                        emote = "<:5944toradora1:1277132596286849177>";
+                        break;
+                      case 1:
+                        emote = "<:furinathink:1277138364755218507>";
+                        break;
+                      case 2:
+                        emote = "<:c5iwasAsuna:1277135352145907794>";
+                        break;
+                    }
+                    interaction.editReply({content: `${emote}\nUnknown character "${a}", check your spelling and try again`});
                     break;
                 }
-                interaction.editReply({content: `${emote}\nUnknown character "${a}", check your spelling and try again`});
               }
             }
 

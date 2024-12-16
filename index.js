@@ -47,6 +47,23 @@ function rescan() {
                 });
               });
             }
+            var char = list[key].characters[k].fetch;
+            axios.get(`https://gelbooru.com/index.php?page=dapi&s=post&q=index&json=1&tags=${char}+rating%3ageneral`).then(function (response) {
+              console.log(`Updating Gelbooru page max for ${list[key].characters[k].name}...`);
+              c = Math.floor(response.data['@attributes'].count/100);
+              if (c == 0) list[key].characters[k].gelbooru = false;
+              else {
+                list[key].characters[k].pagemax[(typeof(list[key].characters[k].pixiv)==='undefined')?1:2]=(c>=200)?200:c;
+
+                fs.writeFile('json/list.json', JSON.stringify(list,null,2), err => {
+                  if (err) {
+                    console.error(err);
+                  } else {
+                  }
+                });
+              }
+
+            });
           }, i * 2000);
         } catch (e) {
           console.error(`Failed to get for ${list[key].characters[k].name}!`);
@@ -132,9 +149,11 @@ client.on(Events.InteractionCreate, async interaction => {
             return;
           }
         if (interaction.user != null) {
-          if (interaction.user.id == "832898834358075414") { //drew
-            await interaction.reply({ content: `get blocked idiot [haha](https://media.tenor.com/jkrntNKtKGkAAAAM/frieren-fern.gif)`, ephemeral: true});
-            return;
+          switch (interaction.user.id) {
+            case "832898834358075414": //drew
+            case "708267426114043904": //reaper
+              await interaction.reply({ content: `get blocked idiot [haha](https://media.tenor.com/jkrntNKtKGkAAAAM/frieren-fern.gif)`, ephemeral: true});
+              return;
           }
         }
 	const command = interaction.client.commands.get(interaction.commandName);
