@@ -37,7 +37,7 @@ async function fetchDanbooru(character, char_cache, nsfw) {
       var bannedtags = banned_tags.normal.slice();
       if (typeof(c.exclude_tags) !== 'undefined') {
         bannedtags.forEach((item,index,arr) => {
-          if (c.exclude_tags.includes(istem)) delete bannedtags[index];
+          if (c.exclude_tags.includes(item)) delete bannedtags[index];
         });
       }
       response.data.forEach((item,index,arr) => {
