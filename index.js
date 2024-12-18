@@ -20,7 +20,8 @@ function rescan() {
               var a = response.data.substring(response.data.lastIndexOf('<a class="paginator-page desktop-only"'));
               var c = parseInt(a.substring(a.indexOf('">')+2, a.indexOf('</a>')));
               console.log(`Updating Danbooru page max for ${list[key].characters[k].name}...`);
-              list[key].characters[k].pagemax[0] = (c >= 1000) ? 1000 : c;
+              if (isNaN(c)) { list[key].characters[k].pagemax[0] = 1; console.log("HTML scrape returned null, assuming max page of 1..."); }
+              else list[key].characters[k].pagemax[0] = (c >= 1000) ? 1000 : c;
 
               fs.writeFile('json/list.json', JSON.stringify(list,null,2), err => {
                 if (err) {
@@ -52,6 +53,7 @@ function rescan() {
               console.log(`Updating Gelbooru page max for ${list[key].characters[k].name}...`);
               c = Math.floor(response.data['@attributes'].count/100);
               if (c == 0) list[key].characters[k].gelbooru = false;
+              else if (typeof(list[key].characters[k].gelbooru) !== 'undefined') delete list[key].characters[k].gelbooru;
               else {
                 list[key].characters[k].pagemax[(typeof(list[key].characters[k].pixiv)==='undefined')?1:2]=(c>=200)?200:c;
 
