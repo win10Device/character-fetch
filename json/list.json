@@ -2492,8 +2492,9 @@
       }
     }
   },
-  "SAO": {
+  "sao": {
     "value": "Sword Art Online",
+    "characters": {
     "akinatsuki": {
       "name": "Aki Natsuki",
       "fetch": "aki_natsuki",
@@ -2992,6 +2993,7 @@
       "fetch": "yuna_(sao)",
       "pixiv": "ユナ SAO",
       "pagemax": []
+    }
     }
   },
   "toradora": {
