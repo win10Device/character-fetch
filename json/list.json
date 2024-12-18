@@ -151,7 +151,7 @@
         "fetch": "clorinde_(genshin_impact)",
         "pixiv": "クロリンデ",
         "pagemax": [
-          107,
+          108,
           18,
           5
         ],
@@ -470,7 +470,7 @@
         "fetch": "layla_(genshin_impact)",
         "pixiv": "レイラ(原神)",
         "pagemax": [
-          47,
+          48,
           18,
           3
         ]
@@ -510,7 +510,7 @@
         "fetch": "mavuika_(genshin_impact)",
         "pixiv": "Mavuika",
         "pagemax": [
-          48,
+          49,
           5,
           1
         ]
@@ -595,7 +595,7 @@
         "fetch": "ningguang_(genshin_impact)",
         "pixiv": "凝光(原神)",
         "pagemax": [
-          121,
+          122,
           13,
           4
         ],
@@ -627,7 +627,7 @@
         "fetch": "raiden_shogun",
         "pixiv": "雷電将軍",
         "pagemax": [
-          765,
+          766,
           182,
           32
         ],
@@ -659,7 +659,7 @@
         "fetch": "sangonomiya_kokomi",
         "pixiv": "珊瑚宮心海",
         "pagemax": [
-          190,
+          191,
           92,
           8
         ],
@@ -906,7 +906,7 @@
         "fetch": "zhongli_(genshin_impact)",
         "pixiv": "鍾離",
         "pagemax": [
-          452,
+          453,
           164,
           39
         ],
@@ -918,7 +918,7 @@
         "pixiv": "蛍(原神)",
         "pagemax": [
           778,
-          218,
+          219,
           43
         ],
         "nsfw": true
@@ -1004,7 +1004,7 @@
         "fetch": "hijiri_byakuren",
         "pixiv": "聖白蓮",
         "pagemax": [
-          656,
+          657,
           267,
           7
         ]
@@ -1093,7 +1093,7 @@
         "pixiv": "エリス",
         "pagemax": [
           17,
-          64,
+          65,
           1
         ]
       },
@@ -1168,7 +1168,7 @@
         "fetch": "hata_no_kokoro",
         "pixiv": "秦こころ",
         "pagemax": [
-          337,
+          338,
           214,
           7
         ]
@@ -1286,7 +1286,7 @@
         "fetch": "imaizumi_kagerou",
         "pixiv": "今泉影狼",
         "pagemax": [
-          431,
+          432,
           165,
           9
         ]
@@ -1502,8 +1502,8 @@
         "fetch": "lunasa_prismriver",
         "pixiv": "ルナサ・プリズムリバー",
         "pagemax": [
-          171,
-          71,
+          172,
+          72,
           3
         ]
       },
@@ -1513,7 +1513,7 @@
         "pixiv": "リリカ・プリズムリバー",
         "pagemax": [
           125,
-          56,
+          57,
           3
         ]
       },
@@ -1663,7 +1663,7 @@
         "pixiv": "犬走椛",
         "pagemax": [
           1000,
-          579,
+          580,
           18
         ]
       },
@@ -1692,7 +1692,7 @@
         "fetch": "hijiri_byakuren",
         "pixiv": "聖白蓮",
         "pagemax": [
-          656,
+          657,
           267,
           7
         ]
@@ -1843,7 +1843,7 @@
         "pixiv": "レミリア・スカーレット",
         "pagemax": [
           1000,
-          993,
+          994,
           55
         ]
       },
@@ -2032,7 +2032,7 @@
         "pixiv": "古明地さとり",
         "pagemax": [
           1000,
-          762,
+          761,
           39
         ]
       },
@@ -2051,7 +2051,7 @@
         "fetch": "kijin_seija",
         "pixiv": "鬼人正邪",
         "pagemax": [
-          291,
+          292,
           175,
           7
         ]
@@ -2477,7 +2477,7 @@
         "pagemax": [
           1000,
           482,
-          23
+          22
         ]
       },
       "zanmunippaku": {
@@ -2490,6 +2490,508 @@
           2
         ]
       }
+    }
+  },
+  "SAO": {
+    "value": "Sword Art Online",
+    "akinatsuki": {
+      "name": "Aki Natsuki",
+      "fetch": "aki_natsuki",
+      "pixiv": "安岐ナツキ",
+      "pagemax": []
+    },
+    "alicezuberg": {
+      "name": "Alice Zuberg",
+      "fetch": "alice_zuberg",
+      "pixiv": "アリス・ツーベルク",
+      "pagemax": []
+    },
+    "aliciarue": {
+      "name": "Alicia Rue",
+      "fetch": "alicia_rue",
+      "pixiv": "アリシャ・ルー",
+      "pagemax": []
+    },
+    "amayori": {
+      "name": "Amayori",
+      "fetch": "amayori_(sao)",
+      "pagemax": []
+    },
+    "andrewgilbertmills": {
+      "name": "Andrew Gilbert Mills (agil)",
+      "fetch": "agil",
+      "pixiv": "エギル",
+      "pagemax": []
+    },
+    "asadashino": {
+      "name": "Asada Shino",
+      "fetch": "asada_shino",
+      "pixiv": "朝田詩乃",
+      "pagemax": []
+    },
+    "asougigoushi": {
+      "name": "Asougi Goushi",
+      "fetch": "asougi_goushi ",
+      "pagemax": []
+    },
+    "ayanokeiko": {
+      "name": "Ayano Keiko (Silica)",
+      "fetch": "silica",
+      "pixiv": "シリカ",
+      "pagemax": []
+    },
+    "behemoth": {
+      "name": "Behemoth",
+      "fetch": "behemoth_(sao)",
+      "pagemax": []
+    },
+    "bercouliherlentz": {
+      "name": "Bercouli Herlentz",
+      "fetch": "bercouli_(sao)",
+      "pagemax": []
+    },
+    "cardinal": {
+      "name": "Cardinal (Underworld)",
+      "fetch": "cardinal_(sao)",
+      "pixiv": "カーディナル SAO",
+      "pagemax": []
+    },
+    "ceba": {
+      "name": "Ceba",
+      "fetch": "ceba",
+      "pagemax": []
+    },
+    "chudelkin": {
+      "name": "Chudelkin",
+      "fetch": "chudelkin",
+      "pagemax": []
+    },
+    "deusolbert": {
+      "name": "deusolbert",
+      "fetch": "deusolbert_(sao)",
+      "pagemax": []
+    },
+    "diavel": {
+      "name": "Diavel",
+      "fetch": "",
+      "pixiv": "",
+      "pagemax": []
+    },
+    "ducker": {
+      "name": "Ducker",
+      "fetch": "ducker",
+      "pagemax": []
+    },
+    "edith": {
+      "name": "Edith",
+      "fetch": "eydis_(sao)",
+      "pixiv": "イーディス",
+      "pagemax": []
+    },
+    "eldriewoolsburg": {
+      "name": "Eldrie Woolsburg",
+      "fetch": "eldrie_(sao)",
+      "pagemax": []
+    },
+    "eolyneherlentz": {
+      "name": "Eolyne Herlentz",
+      "fetch": "eolyne_herlentz",
+      "pixiv": "",
+      "pagemax": []
+    },
+    "eugene": {
+      "name": "Eugene",
+      "fetch": "eugene_(sao)",
+      "pagemax": []
+    },
+    "eugeo": {
+      "name": "Eugeo",
+      "fetch": "eugeo",
+      "pixiv": "ユージオ",
+      "pagemax": []
+    },
+    "fanatio": {
+      "name": "Fanatio",
+      "fetch": "fanatio_synthesis_two",
+      "pixiv": "ファナティオ・シンセシス・ツー",
+      "pagemax": []
+    },
+    "fizel": {
+      "name": "Fizel",
+      "fetch": "fizel_(sao)",
+      "pagemax": []
+    },
+    "frenicaszeski": {
+      "name": "Frenica Szeski",
+      "fetch": "frenica_szeski",
+      "pagemax": []
+    },
+    "gabrielmiller": {
+      "name": "Gabriel Miller",
+      "fetch": "Gabriel_miller",
+      "pagemax": []
+    },
+    "higatakeru": {
+      "name": "Higa Takeru",
+      "fetch": "higa_takeru",
+      "pixiv": "比嘉健",
+      "pagemax": []
+    },
+    "hosakacarinatomo": {
+      "name": "Hosaka Carina Tomo (Argo the rat)",
+      "fetch": "argo_the_rat",
+      "pagemax": []
+    },
+    "iskahn": {
+      "name": "Iskahn",
+      "fetch": "iskahn_(sao)",
+      "pixiv": "イスカーン",
+      "pagemax": []
+    },
+    "jun": {
+      "name": "Jun",
+      "fetch": "jun_(sao)",
+      "pagemax": []
+    },
+    "kanamotoatsushi": {
+      "name": "Kanamoto Atsushi",
+      "fetch": "atsushi_kanamoto",
+      "pagemax": []
+    },
+    "kanzakielsa": {
+      "name": "Kanzaki Elsa",
+      "fetch": "kanzaki_elsa",
+      "pagemax": []
+    },
+    "kayabaakihiko": {
+      "name": "Kayaba Akihiko",
+      "fetch": "kayaba_akihiko",
+      "pixiv": "茅場晶彦",
+      "pagemax": []
+    },
+    "keita": {
+      "name": "Keita",
+      "fetch": "keita_(sao)",
+      "pagemax": []
+    },
+    "kibaou": {
+      "name": "Kibaou",
+      "fetch": "kibaou",
+      "pixiv": "キバオウ",
+      "pagemax": []
+    },
+    "kikuokaseijirou": {
+      "name": "Kikuoka Seijirou",
+      "fetch": "kikuoka_seijirou",
+      "pixiv": "菊岡誠二郎",
+      "pagemax": []
+    },
+    "kirigayakazuto": {
+      "name": "Kirigaya Kazuto (Kirito)",
+      "fetch": "kirito",
+      "pixiv": "キリト",
+      "pagemax": []
+    },
+    "kirigayamidori": {
+      "name": "Kirigaya Midori",
+      "fetch": "kirigaya_midori",
+      "pagemax": []
+    },
+    "kirigayasuguha": {
+      "name": "Kirigaya Suguha",
+      "fetch": "kirigaya_suguha",
+      "pixiv": "桐ヶ谷直葉",
+      "pagemax": []
+    },
+    "kizmel": {
+      "name": "Kizmel",
+      "fetch": "kizmel",
+      "pixiv": "キズメル",
+      "pagemax": []
+    },
+    "kohiruimakikaren": {
+      "name": "Kohiruimaki Karen",
+      "fetch": "kohiruimaki_karen",
+      "pixiv": "小比類巻香蓮",
+      "pagemax": []
+    },
+    "konnoaiko": {
+      "name": "Konno Aiko",
+      "fetch": "Konno_aiko",
+      "pagemax": []
+    },
+    "konnoyuuki": {
+      "name": "Konno Yuuki",
+      "fetch": "konno_yuuki_(sao)",
+      "pagemax": []
+    },
+    "koujirorinko": {
+      "name": "Koujiro Rinko",
+      "fetch": "koujiro_rinko",
+      "pixiv": "神代凛子",
+      "pagemax": []
+    },
+    "kuradeel": {
+      "name": "kuradeel [crazy dude]",
+      "fetch": "kuradeel",
+      "pagemax": []
+    },
+    "lind": {
+      "name": "Lind",
+      "fetch": "lind_(sao)",
+      "pagemax": []
+    },
+    "linel": {
+      "name": "Linel",
+      "fetch": "linel_(sao)",
+      "pagemax": []
+    },
+    "lipiazancale": {
+      "name": "Lipia Zancale",
+      "fetch": "lipia_zancale",
+      "pagemax": []
+    },
+    "liten": {
+      "name": "Liten",
+      "fetch": "liten",
+      "pagemax": []
+    },
+    "medinaorthinanos": {
+      "name": "Medina Orthinanos",
+      "fetch": "medina_orthinanos",
+      "pixiv": "メディナ・オルティナノス",
+      "pagemax": []
+    },
+    "morte": {
+      "name": "Morte",
+      "fetch": "morte_(sao)",
+      "pagemax": []
+    },
+    "musketeerx": {
+      "name": "Musketeer X",
+      "fetch": "musketeer_x",
+      "pagemax": []
+    },
+    "nagatashinichi": {
+      "name": "Nagata Shinichi",
+      "fetch": "nagata_shin'ichi",
+      "pixiv": "長田伸一",
+      "pagemax": []
+    },
+    "Nishida": {
+      "name": "Nishida",
+      "fetch": "nishida_(sao)",
+      "pagemax": []
+    },
+    "nochizawaeiji": {
+      "name": "Nochizawa Eiji",
+      "fetch": "eiji_(sao)",
+      "pagemax": []
+    },
+    "nori": {
+      "name": "Nori",
+      "fetch": "nori_(sao)",
+      "pagemax": []
+    },
+    "palepider": {
+      "name": "Pale Rider",
+      "fetch": "pale_rider_(sao)",
+      "pagemax": []
+    },
+    "pina": {
+      "name": "Pina",
+      "fetch": "pina_(sao)",
+      "pixiv": "ピナ sao",
+      "pagemax": []
+    },
+    "premiere": {
+      "name": "Premiere",
+      "fetch": "premiere_(sao)",
+      "pixiv": "プレミア(SAO)",
+      "pagemax": []
+    },
+    "quinella": {
+      "name": "Quinella",
+      "fetch": "quinella",
+      "pixiv": "クィネラ",
+      "pagemax": []
+    },
+    "raiosantinous": {
+      "name": "Raios Antinous",
+      "fetch": "raios_antinous",
+      "pagemax": []
+    },
+    "renly": {
+      "name": "Renly",
+      "fetch": "renly_synthesis_twenty-seven",
+      "pagemax": []
+    },
+    "ronyearabel": {
+      "name": "Ronye Arabel",
+      "fetch": "ronye_arabel",
+      "pixiv": "ロニエ・アラベル",
+      "pagemax": []
+    },
+    "rosalia": {
+      "name": "Rosalia",
+      "fetch": "rosalia_(sao)",
+      "pixiv": "ロニエ・アラベル",
+      "pagemax": []
+    },
+    "sachi": {
+      "name": "Sachi",
+      "fetch": "sachi_(sao)",
+      "pixiv": "サチ sao",
+      "pagemax": []
+    },
+    "sakuya": {
+      "name": "Sakuya",
+      "fetch": "sakuya_(sao)",
+      "pagemax": []
+    },
+    "sasamaru": {
+      "name": "Sasamaru",
+      "fetch": "sasamaru_(sao)",
+      "pagemax": []
+    },
+    "sasha": {
+      "name": "Sasha",
+      "fetch": "sasha_(sao)",
+      "pagemax": []
+    },
+    "selkazuberg": {
+      "name": "Selka Zuberg",
+      "fetch": "selka_zuberg",
+      "pixiv": "セルカ・ツーベルク",
+      "pagemax": []
+    },
+    "shigemuratetsuhiro": {
+      "name": "Shigemura Tetsuhiro",
+      "fetch": "shigemura_tetsuhiro",
+      "pagemax": []
+    },
+    "shigemurayuuna": {
+      "name": "Shigemura Yuuna",
+      "fetch": "shigemura_yuuna",
+      "pixiv": "重村悠那",
+      "pagemax": []
+    },
+    "shinoharamiyu": {
+      "name": "Shinohara Miyu",
+      "fetch": "shinohara_miyu_(sao)",
+      "pagemax": []
+    },
+    "shinozakirika": {
+      "name": "Shinozaki Rika",
+      "fetch": "shinozaki_rika_(sao)",
+      "pagemax": []
+    },
+    "shivata": {
+      "name": "Shivata",
+      "fetch": "shivata",
+      "pagemax": []
+    },
+    "skuld": {
+      "name": "Skuld",
+      "fetch": "skuld_(sao)",
+      "pagemax": []
+    },
+    "sortilienaserlut": {
+      "name": "Sortiliena Serlut",
+      "fetch": "sortiliena_serlut",
+      "pixiv": "ソルティリーナ・セルルト",
+      "pagemax": []
+    },
+    "strea": {
+      "name": "Strea",
+      "fetch": "strea_(sao)",
+      "pixiv": "ストレア(SAO)",
+      "pagemax": []
+    },
+    "sugounobuyuki": {
+      "name": "Sugou Nobuyuki",
+      "fetch": "sugou_nobuyuki",
+      "pixiv": "須郷伸之",
+      "pagemax": []
+    },
+    "talken": {
+      "name": "Talken",
+      "fetch": "talken_(sao)",
+      "pagemax": []
+    },
+    "tecchi": {
+      "name": "Tecchi",
+      "fetch": "tecchi_(sao)",
+      "pagemax": []
+    },
+    "Tetsuo": {
+      "name": "Tetsuo",
+      "fetch": "tetsuo_(sao)",
+      "pagemax": []
+    },
+    "thinker": {
+      "name": "Thinker",
+      "fetch": "thinker_(sao)",
+      "pagemax": []
+    },
+    "tia": {
+      "name": "Tia",
+      "fetch": "tia_(sao)",
+      "pagemax": []
+    },
+    "tonky": {
+      "name": "Tonky",
+      "fetch": "tonky_(sao)",
+      "pagemax": []
+    },
+    "tozawamisumi": {
+      "name": "Tozawa Misumi",
+      "fetch": "tozawa_misumi",
+      "pagemax": []
+    },
+    "vassagocasals": {
+      "name": "Vassago Casals",
+      "fetch": "vassago_casals_(sao)",
+      "pagemax": []
+    },
+    "vixurulshasta": {
+      "name": "Vixur Ul Shasta",
+      "fetch": "vixur_ul_shasta",
+      "pagemax": []
+    },
+    "yamikaze": {
+      "name": "Yamikaze",
+      "fetch": "yamikaze_(sao)",
+      "pixiv": "闇風",
+      "pagemax": []
+    },
+    "yolko": {
+      "name": "Yolko",
+      "fetch": "yolko_(sao)",
+      "pagemax": []
+    },
+    "yui": {
+      "name": "Yui",
+      "fetch": "yui_(sao)",
+      "pixiv": "ユイ(SAO)",
+      "pagemax": []
+    },
+    "yulier": {
+      "name": "Yulier",
+      "fetch": "yulier_(sao)",
+      "pagemax": []
+    },
+    "yuukiasuna": {
+      "name": "Yuuki Asuna (Asuna)",
+      "fetch": "asuna_(sao)",
+      "pixiv": "アスナ(SAO)",
+      "pagemax": []
+    },
+    "yuna": {
+      "name": "YUNA",
+      "fetch": "yuna_(sao)",
+      "pixiv": "ユナ SAO",
+      "pagemax": []
     }
   },
   "toradora": {
@@ -2534,11 +3036,11 @@
     "characters": {
       "hoshinoai": {
         "name": "Hoshino Ai",
-        "fetch": "hoshino_ai_(oshi_no_ko)",
+        "fetch": "hoshino_ai",
         "pagemax": [
-          null
-        ],
-        "gelbooru": false
+          104,
+          15
+        ]
       },
       "hoshinoruby": {
         "name": "Hoshino Ruby",
@@ -2581,7 +3083,7 @@
         "name": "Megumin",
         "fetch": "megumin",
         "pagemax": [
-          417,
+          418,
           8
         ],
         "nsfw": false
