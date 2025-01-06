@@ -130,6 +130,7 @@ async function fetchGelbooru(character, char_cache, nsfw) {
           }
         });
         if (!(["jpg","jpeg","gif","png","webp"]).includes(item.file_url)) delete response.data[index];
+        if (item.tags.includes("video")) delete response.data[index];
         if (item.tags.includes("comic")) delete response.data[index];
 //        if ((item.tag_string_artist+"").startsWith("banned_artist")) delete response.data[index];
       });
@@ -148,7 +149,7 @@ async function fetchGelbooru(character, char_cache, nsfw) {
               artist =+ `[${item}](https://danbooru.donmai.us/posts?tags=${encodeURIComponent(item)}&z=1)\n`
             });
           } else {*/
-            artist = `["${encodeURIComponent(thing.owner)}"](https://gelbooru.com/index.php?page=account&s=profile&id=${thing.creator_id})`;
+            artist = `[***Check Post***\nPress on "Fetch"](https://gelbooru.com/index.php?page=account&s=profile&id=${thing.creator_id})`;
 //          }
           item.data = {
             artist: artist,
@@ -219,7 +220,7 @@ async function fetchPixiv(character, char_cache, nsfw) {
           source: `[url](https://www.pixiv.net/en/artworks/${post.id})`,
           uri: `https://www.pixiv.net/en/artworks/${post.id}`,
           img: `${post.url}`
-            .replace("https://i.pximg.net/c/250x250_80_a2/", "https://mint.ranrom.xyz/discord/bot/pixivgrab/i.pximg.net/")
+            .replace("https://i.pximg.net/c/250x250_80_a2/", "https://mint.ranrom.net/discord/bot/pixivgrab/i.pximg.net/")
             .replace("_p0_custom1200", "_p0_master1200")
             .replace("_p0_square1200", "_p0_master1200")
             .replace("custom-thumb", "img-master")
@@ -358,7 +359,20 @@ module.exports = {
                   case "n3ptune":
                     interaction.editReply({content: `https://mint.ranrom.net/profile/531139663096840192/card/`});
                     break;
+                  case "pigeon":
+                    interaction.editReply({content: `https://www.youtube.com/watch?v=7MaCtOs0kCg`});
+                    break;
+                  case "character":
+                    interaction.editReply({content: `https://tenor.com/view/mavuika-dance-genshin-impact-natlan-pyro-gif-4519653848599171566`});
+                    break;
+                  case "genki":
+                    interaction.editReply({content: `No [⠀](https://cdn.discordapp.com/emojis/1216103696342061166.png?quality=lossless&name=OrinCry&size=512)`})
+                    break;
                   default:
+                    if (a.includes("@") || a.includes("[") || a.includes("http") || a.length >= 10) { //Prevent users pinging other users with the bot
+                      interaction.editReply({content: `Check your spelling and try again!\n-# Command was rejected!`});
+                      return;
+                    }
                     switch (Math.floor(Math.random() * 2)) {
                       case 0:
                         emote = "<:5944toradora1:1277132596286849177>";
