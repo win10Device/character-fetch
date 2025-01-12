@@ -154,6 +154,11 @@ client.on(Events.InteractionCreate, async interaction => {
           switch (interaction.user.id) {
             case "832898834358075414": //drew
             case "708267426114043904": //reaper
+//            case "1137446289274052689": //pigeon
+//            case "1110254349227151383":
+//            case "606780722522357780":
+//            case "981855625371852860":
+//             case "489170266405208074": //Genki
               await interaction.reply({ content: `get blocked idiot [haha](https://media.tenor.com/jkrntNKtKGkAAAAM/frieren-fern.gif)`, ephemeral: true});
               return;
           }
