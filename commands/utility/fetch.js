@@ -345,7 +345,7 @@ module.exports = {
                         if (error == typeof(String))
                           console.log('error ' + error);
                       });
-                    }, 6000);
+                    }, 8000);
                   }
                 } else {
                   interaction.editReply({content: `:frowning: Failed to fetch image after 10 attempts\nthis usually means there was too much unsafe content`})
