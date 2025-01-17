@@ -329,6 +329,7 @@ module.exports = {
 
                   //Read message back to make sure the image embedded correctly
                   if (message.guild !== null) {
+                    var delay = Math.abs(Date.now() - interaction.createdTimestamp);
                     setTimeout(function() {
                       //API call is made because message cache from 'client.channels' always returns 0 for width and height, even if 'forced' is set because of caching
                       axios.get(`https://discord.com/api/v10/channels/${message.channelId}/messages/${message.id}`, {
@@ -345,7 +346,7 @@ module.exports = {
                         if (error == typeof(String))
                           console.log('error ' + error);
                       });
-                    }, 8000);
+                    }, 6000 + delay);
                   }
                 } else {
                   interaction.editReply({content: `:frowning: Failed to fetch image after 10 attempts\nthis usually means there was too much unsafe content`})
