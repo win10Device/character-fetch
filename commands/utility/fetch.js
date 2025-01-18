@@ -13,7 +13,7 @@ var banned_tags = JSON.parse(fs.readFileSync('json/banned_tags.json', 'utf8'));
 
 console.log("a");
 function getRandomInt(min, max){const minCeiled=Math.ceil(min);const maxFloored=Math.floor(max);return Math.floor(Math.random()*(maxFloored-minCeiled)+minCeiled);}
-async function getAverageColour(url){if(url==null)return{r:50,g:50,b:50};const image = await Jimp.read(url);var rgb={r:0,g:0,b:0};var count = 0;for(let x=0;x<image.bitmap.width;x++)for(let y=0;y<image.bitmap.height;y++){var color=intToRGBA(image.getPixelColor(x,y));rgb.r+=color.r;rgb.g+=color.g;rgb.b+=color.b;count++;}return{r:~~Math.floor(rgb.r/count),g:~~Math.floor(rgb.g/count),b:~~Math.floor(rgb.b/count)};}
+async function getAverageColour(url){if(url==null)return{r:~~100,g:~~100,b:~~100};const image = await Jimp.read(url);var rgb={r:0,g:0,b:0};var count=0;for(let x=0;x<image.bitmap.width;x++)for(let y=0;y<image.bitmap.height;y++){var color=intToRGBA(image.getPixelColor(x,y));rgb.r+=color.r;rgb.g+=color.g;rgb.b+=color.b;count++;}return{r:~~Math.floor(rgb.r/count),g:~~Math.floor(rgb.g/count),b:~~Math.floor(rgb.b/count)};}
 async function fetchDanbooru(character, char_cache, nsfw) {
   var i = 0;
   var blocked = [];
@@ -218,15 +218,14 @@ async function fetchPixiv(character, char_cache, nsfw) {
       else {
         var na = crypto.randomInt(1, response.data.body.illustManga.data.length);
         var post = response.data.body.illustManga.data[na]
-        var url = `${post.url}`.replace("https://i.pximg.net/c/250x250_80_a2/", "https://mint.ranrom.net/discord/bot/pixivgrab/i.pximg.net/")
-            .replace("_p0_custom1200", "_p0_master1200")
-            .replace("_p0_square1200", "_p0_master1200")
-            .replace("custom-thumb", "img-master")
         item.data = {
           artist: (typeof(response.data.body.illustManga.data[na].userName) !== 'undefined') ? post.userName : 'Unknown',
           source: `[url](https://www.pixiv.net/en/artworks/${post.id})`,
           uri: `https://www.pixiv.net/en/artworks/${post.id}`,
-          img: url,
+          img: `${post.url}`.replace("https://i.pximg.net/c/250x250_80_a2/", "https://mint.ranrom.net/discord/bot/pixivgrab/i.pximg.net/")
+                            .replace("_p0_custom1200", "_p0_master1200")
+                            .replace("_p0_square1200", "_p0_master1200")
+                            .replace("custom-thumb", "img-master"),
           thumbnail: null
         }
       }
