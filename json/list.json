@@ -17,8 +17,8 @@
         "fetch": "alhaitham_(genshin_impact)",
         "pixiv": "アルハイゼン",
         "pagemax": [
-          144,
-          71,
+          145,
+          72,
           19
         ]
       },
@@ -39,7 +39,7 @@
         "pixiv": "荒瀧一斗",
         "pagemax": [
           62,
-          28,
+          29,
           4
         ]
       },
@@ -48,7 +48,7 @@
         "fetch": "arlecchino_(genshin_impact)",
         "pixiv": "アルレッキーノ(原神)",
         "pagemax": [
-          192,
+          194,
           41,
           17
         ],
@@ -80,7 +80,7 @@
         "fetch": "beidou_(genshin_impact)",
         "pixiv": "北斗(原神)",
         "pagemax": [
-          97,
+          98,
           20,
           2
         ],
@@ -121,7 +121,7 @@
         "fetch": "chevreuse_(genshin_impact)",
         "pixiv": "夏沃蕾",
         "pagemax": [
-          19,
+          20,
           1,
           1
         ]
@@ -151,7 +151,7 @@
         "fetch": "clorinde_(genshin_impact)",
         "pixiv": "クロリンデ",
         "pagemax": [
-          111,
+          112,
           19,
           6
         ],
@@ -167,8 +167,8 @@
         "fetch": "collei_(genshin_impact)",
         "pixiv": "コレイ(原神)",
         "pagemax": [
-          66,
-          12,
+          67,
+          13,
           7
         ]
       },
@@ -198,7 +198,7 @@
         "fetch": "diluc_(genshin_impact)",
         "pixiv": "Diluc(GenshinImpact)",
         "pagemax": [
-          158,
+          159,
           14,
           12
         ],
@@ -209,8 +209,8 @@
         "fetch": "diona_(genshin_impact)",
         "pixiv": "ディオナ(原神)",
         "pagemax": [
-          62,
-          26,
+          63,
+          27,
           4
         ]
       },
@@ -239,7 +239,7 @@
         "fetch": "eula_(genshin_impact)",
         "pixiv": "优菈",
         "pagemax": [
-          289,
+          290,
           28,
           6
         ],
@@ -251,7 +251,7 @@
         "pixiv": "ファルザン",
         "pagemax": [
           57,
-          30,
+          31,
           5
         ]
       },
@@ -281,9 +281,9 @@
         "fetch": "furina_(genshin_impact)",
         "pixiv": "フリーナ(原神)",
         "pagemax": [
-          475,
-          91,
-          52
+          478,
+          92,
+          53
         ],
         "nsfw": true,
         "nsfwtag": "+rating:explicit"
@@ -294,7 +294,7 @@
         "pixiv": "嘉明",
         "pagemax": [
           16,
-          11,
+          12,
           2
         ]
       },
@@ -303,9 +303,9 @@
         "fetch": "ganyu_(genshin_impact)",
         "pixiv": "甘雨(原神)",
         "pagemax": [
-          920,
+          921,
           197,
-          25
+          26
         ]
       },
       "gorou": {
@@ -323,9 +323,9 @@
         "fetch": "hu_tao_(genshin_impact)",
         "pixiv": "HuTao",
         "pagemax": [
-          600,
+          603,
           130,
-          40
+          41
         ],
         "nsfw": true
       },
@@ -345,7 +345,7 @@
         "fetch": "kachina_(genshin_impact)",
         "pixiv": "Kachina",
         "pagemax": [
-          23,
+          24,
           3,
           1
         ]
@@ -355,8 +355,8 @@
         "fetch": "kaedehara_kazuha",
         "pixiv": "楓原万葉",
         "pagemax": [
-          187,
-          100,
+          188,
+          101,
           22
         ]
       },
@@ -365,7 +365,7 @@
         "fetch": "kaeya_(genshin_impact)",
         "pixiv": "Kaeya(GenshinImpact)",
         "pagemax": [
-          125,
+          126,
           12,
           10
         ]
@@ -375,8 +375,8 @@
         "fetch": "kamisato_ayaka",
         "pixiv": "神里綾華",
         "pagemax": [
-          319,
-          154,
+          320,
+          155,
           21
         ],
         "nsfw": true
@@ -386,7 +386,7 @@
         "fetch": "kamisato_ayato",
         "pixiv": "神里綾人",
         "pagemax": [
-          85,
+          86,
           74,
           9
         ]
@@ -406,9 +406,9 @@
         "fetch": "keqing_(genshin_impact)",
         "pixiv": "刻晴(原神)",
         "pagemax": [
-          379,
+          381,
           44,
-          9
+          10
         ],
         "nsfw": true
       },
@@ -417,8 +417,8 @@
         "fetch": "kinich_(genshin_impact)",
         "pixiv": "キィニチ",
         "pagemax": [
-          44,
-          26,
+          45,
+          27,
           5
         ]
       },
@@ -427,7 +427,7 @@
         "fetch": "kirara_(genshin_impact)",
         "pixiv": "綺良々",
         "pagemax": [
-          67,
+          68,
           33,
           4
         ]
@@ -448,7 +448,7 @@
         "fetch": "kujou_sara",
         "pixiv": "九条裟羅",
         "pagemax": [
-          107,
+          108,
           30,
           3
         ],
@@ -470,7 +470,7 @@
         "fetch": "layla_(genshin_impact)",
         "pixiv": "レイラ(原神)",
         "pagemax": [
-          49,
+          50,
           19,
           3
         ]
@@ -500,7 +500,7 @@
         "fetch": "lyney_(genshin_impact)",
         "pixiv": "リネ(原神)",
         "pagemax": [
-          74,
+          75,
           21,
           9
         ]
@@ -510,7 +510,7 @@
         "fetch": "mavuika_(genshin_impact)",
         "pixiv": "Mavuika",
         "pagemax": [
-          64,
+          71,
           7,
           2
         ]
@@ -530,9 +530,9 @@
         "fetch": "mona_(genshin_impact)",
         "pixiv": "モナ(原神)",
         "pagemax": [
-          400,
-          72,
-          7
+          402,
+          1,
+          8
         ],
         "nsfw": true
       },
@@ -544,8 +544,8 @@
           "bikini"
         ],
         "pagemax": [
-          54,
-          8,
+          55,
+          1,
           2
         ]
       },
@@ -554,9 +554,9 @@
         "fetch": "nahida_(genshin_impact)",
         "pixiv": "ナヒーダ",
         "pagemax": [
-          428,
-          188,
-          49
+          433,
+          1,
+          50
         ]
       },
       "navia": {
@@ -564,8 +564,8 @@
         "fetch": "navia_(genshin_impact)",
         "pixiv": "ナヒーダ",
         "pagemax": [
-          102,
-          188,
+          103,
+          1,
           5
         ]
       },
@@ -575,7 +575,7 @@
         "pixiv": "ヌヴィレット",
         "pagemax": [
           113,
-          51,
+          1,
           15
         ]
       },
@@ -584,8 +584,8 @@
         "fetch": "nilou_(genshin_impact)",
         "pixiv": "ニィロウ",
         "pagemax": [
-          236,
-          85,
+          240,
+          1,
           8
         ],
         "nsfw": false
@@ -596,7 +596,7 @@
         "pixiv": "凝光(原神)",
         "pagemax": [
           123,
-          13,
+          1,
           4
         ],
         "nsfw": true
@@ -607,7 +607,7 @@
         "pixiv": "ノエル(原神)",
         "pagemax": [
           93,
-          46,
+          1,
           4
         ],
         "nsfw": true
@@ -617,8 +617,8 @@
         "fetch": "qiqi_(genshin_impact)",
         "pixiv": "七七(原神)",
         "pagemax": [
-          143,
-          49,
+          145,
+          1,
           9
         ]
       },
@@ -627,9 +627,9 @@
         "fetch": "raiden_shogun",
         "pixiv": "雷電将軍",
         "pagemax": [
-          775,
-          182,
-          32
+          780,
+          1,
+          33
         ],
         "nsfw": true
       },
@@ -639,7 +639,7 @@
         "pixiv": "レザー(原神)",
         "pagemax": [
           48,
-          20,
+          1,
           4
         ]
       },
@@ -649,7 +649,7 @@
         "pixiv": "ロサリア(原神)",
         "pagemax": [
           66,
-          18,
+          1,
           1
         ],
         "nsfw": true
@@ -660,7 +660,7 @@
         "pixiv": "珊瑚宮心海",
         "pagemax": [
           192,
-          93,
+          1,
           9
         ],
         "nsfw": true
@@ -671,7 +671,7 @@
         "pixiv": "早柚(原神)",
         "pagemax": [
           47,
-          5,
+          1,
           3
         ]
       },
@@ -690,8 +690,8 @@
         "fetch": "shenhe_(genshin_impact)",
         "pixiv": "申鶴",
         "pagemax": [
-          286,
-          79,
+          287,
+          1,
           8
         ],
         "nsfw": true
@@ -702,7 +702,7 @@
         "pixiv": "鹿野院平蔵",
         "pagemax": [
           53,
-          31,
+          1,
           7
         ]
       },
@@ -711,8 +711,8 @@
         "fetch": "sigewinne_(genshin_impact)",
         "pixiv": "シグウィン",
         "pagemax": [
-          53,
-          35,
+          54,
+          1,
           7
         ]
       },
@@ -722,7 +722,7 @@
         "pixiv": "スクロース(原神)",
         "pagemax": [
           63,
-          27,
+          1,
           3
         ],
         "nsfw": true
@@ -732,8 +732,8 @@
         "fetch": "tartaglia_(genshin_impact)",
         "pixiv": "タルタリヤ",
         "pagemax": [
-          302,
-          169,
+          303,
+          1,
           25
         ]
       },
@@ -742,8 +742,8 @@
         "fetch": "thoma_(genshin_impact)",
         "pixiv": "トーマ(原神)",
         "pagemax": [
-          58,
-          14,
+          59,
+          1,
           5
         ]
       },
@@ -753,7 +753,7 @@
         "pixiv": "ティナリ",
         "pagemax": [
           116,
-          66,
+          1,
           17
         ]
       },
@@ -762,9 +762,9 @@
         "fetch": "venti_(genshin_impact)",
         "pixiv": "ウェンティ(原神)",
         "pagemax": [
-          337,
-          97,
-          25
+          338,
+          1,
+          26
         ],
         "nsfw": true
       },
@@ -773,9 +773,9 @@
         "fetch": "wanderer_(genshin_impact)",
         "pixiv": "放浪者(原神)",
         "pagemax": [
-          326,
-          46,
-          50
+          336,
+          1,
+          51
         ]
       },
       "wriothesley": {
@@ -783,8 +783,8 @@
         "fetch": "wriothesley_(genshin_impact)",
         "pixiv": "リオセスリ",
         "pagemax": [
-          79,
-          37,
+          80,
+          1,
           10
         ]
       },
@@ -793,8 +793,8 @@
         "fetch": "xiangling_(genshin_impact)",
         "pixiv": "香菱(原神)",
         "pagemax": [
-          69,
-          17,
+          70,
+          1,
           4
         ]
       },
@@ -804,7 +804,7 @@
         "pixiv": "Xianyun",
         "pagemax": [
           56,
-          5,
+          1,
           2
         ]
       },
@@ -814,8 +814,8 @@
         "pixiv": "魈(原神)",
         "pagemax": [
           267,
-          44,
-          26
+          1,
+          27
         ],
         "nsfw": true
       },
@@ -825,7 +825,7 @@
         "pixiv": "行秋(原神)",
         "pagemax": [
           84,
-          17,
+          1,
           7
         ]
       },
@@ -835,7 +835,7 @@
         "pixiv": "行秋(原神)",
         "pagemax": [
           28,
-          17,
+          1,
           1
         ]
       },
@@ -844,8 +844,8 @@
         "fetch": "yae_miko",
         "pixiv": "八重神子",
         "pagemax": [
-          498,
-          179,
+          500,
+          1,
           17
         ],
         "nsfw": true
@@ -856,7 +856,7 @@
         "pixiv": "煙緋(原神)",
         "pagemax": [
           103,
-          12,
+          1,
           4
         ]
       },
@@ -866,7 +866,7 @@
         "pixiv": "瑶瑶(原神)",
         "pagemax": [
           36,
-          4,
+          1,
           4
         ]
       },
@@ -875,8 +875,8 @@
         "fetch": "yelan_(genshin_impact)",
         "pixiv": "夜蘭",
         "pagemax": [
-          204,
-          60,
+          205,
+          1,
           6
         ],
         "nsfw": true
@@ -887,7 +887,7 @@
         "pixiv": "宵宫",
         "pagemax": [
           166,
-          30,
+          1,
           9
         ]
       },
@@ -897,7 +897,7 @@
         "pixiv": "云堇",
         "pagemax": [
           42,
-          15,
+          1,
           3
         ]
       },
@@ -906,8 +906,8 @@
         "fetch": "zhongli_(genshin_impact)",
         "pixiv": "鍾離",
         "pagemax": [
-          458,
-          166,
+          459,
+          1,
           41
         ],
         "nsfw": true
@@ -917,8 +917,8 @@
         "fetch": "lumine_(genshin_impact)",
         "pixiv": "蛍(原神)",
         "pagemax": [
-          797,
-          221,
+          802,
+          1,
           45
         ],
         "nsfw": true
@@ -928,8 +928,8 @@
         "fetch": "aether_(genshin_impact)",
         "pixiv": "空(原神)",
         "pagemax": [
-          495,
-          137,
+          499,
+          1,
           34
         ],
         "nsfw": true
@@ -939,8 +939,8 @@
         "fetch": "paimon_(genshin_impact)",
         "pixiv": "パイモン(原神)",
         "pagemax": [
-          320,
-          114,
+          323,
+          1,
           23
         ]
       }
@@ -955,8 +955,8 @@
         "pixiv": "アリス・マーガトロイド",
         "pagemax": [
           1000,
-          869,
-          24
+          868,
+          25
         ]
       },
       "aunnkomano": {
@@ -964,7 +964,7 @@
         "fetch": "komano_aunn",
         "pixiv": "高麗野あうん",
         "pagemax": [
-          96,
+          97,
           68,
           5
         ]
@@ -975,7 +975,7 @@
         "pixiv": "射命丸文",
         "pagemax": [
           1000,
-          691,
+          689,
           29
         ]
       },
@@ -995,7 +995,7 @@
         "pixiv": "孫美天",
         "pagemax": [
           22,
-          14,
+          15,
           2
         ]
       },
@@ -1004,8 +1004,8 @@
         "fetch": "hijiri_byakuren",
         "pixiv": "聖白蓮",
         "pagemax": [
-          660,
-          268,
+          661,
+          267,
           8
         ]
       },
@@ -1024,7 +1024,7 @@
         "fetch": "tenkajin_chiyari",
         "pixiv": "天火人ちやり",
         "pagemax": [
-          31,
+          32,
           16,
           3
         ]
@@ -1045,8 +1045,8 @@
         "pixiv": "琪露诺",
         "pagemax": [
           1000,
-          34,
-          48
+          35,
+          49
         ]
       },
       "daiyousei": {
@@ -1054,7 +1054,7 @@
         "fetch": "daiyousei",
         "pixiv": "大妖精",
         "pagemax": [
-          470,
+          472,
           376,
           12
         ]
@@ -1082,8 +1082,8 @@
         "fetch": "yagokoro_eirin",
         "pixiv": "八意永琳",
         "pagemax": [
-          588,
-          190,
+          589,
+          189,
           7
         ]
       },
@@ -1132,7 +1132,7 @@
         "pagemax": [
           1000,
           1000,
-          87
+          88
         ]
       },
       "fujiwaranomokou": {
@@ -1141,7 +1141,7 @@
         "pixiv": "藤原妹紅",
         "pagemax": [
           1000,
-          606,
+          607,
           33
         ]
       },
@@ -1178,7 +1178,7 @@
         "fetch": "himekaidou_hatate",
         "pixiv": "姫海棠はたて",
         "pagemax": [
-          373,
+          374,
           171,
           6
         ]
@@ -1198,7 +1198,7 @@
         "fetch": "hieda_no_akyuu",
         "pixiv": "稗田阿求",
         "pagemax": [
-          278,
+          279,
           125,
           6
         ]
@@ -1208,9 +1208,9 @@
         "fetch": "kagiyama_hina",
         "pixiv": "鍵山雛",
         "pagemax": [
-          522,
+          524,
           377,
-          17
+          18
         ]
       },
       "hisamiyomotsu": {
@@ -1218,7 +1218,7 @@
         "fetch": "yomotsu_hisami",
         "pixiv": "豫母都日狭美",
         "pagemax": [
-          32,
+          33,
           17,
           3
         ]
@@ -1229,7 +1229,7 @@
         "pixiv": "紅美鈴",
         "pagemax": [
           1000,
-          527,
+          525,
           14
         ]
       },
@@ -1246,7 +1246,7 @@
         "fetch": "kumoi_ichirin",
         "pixiv": "雲居一輪",
         "pagemax": [
-          308,
+          309,
           128,
           4
         ]
@@ -1258,7 +1258,7 @@
         "pagemax": [
           335,
           196,
-          5
+          6
         ]
       },
       "jo'onyorigami": {
@@ -1266,7 +1266,7 @@
         "fetch": "yorigami_jo'on",
         "pixiv": "女苑",
         "pagemax": [
-          143,
+          144,
           3,
           6
         ]
@@ -1276,7 +1276,7 @@
         "fetch": "junko_(touhou)",
         "pixiv": "純狐",
         "pagemax": [
-          286,
+          287,
           128,
           11
         ]
@@ -1286,7 +1286,7 @@
         "fetch": "imaizumi_kagerou",
         "pixiv": "今泉影狼",
         "pagemax": [
-          433,
+          434,
           164,
           10
         ]
@@ -1296,7 +1296,7 @@
         "fetch": "houraisan_kaguya",
         "pixiv": "蓬莱山輝夜",
         "pagemax": [
-          758,
+          760,
           281,
           14
         ]
@@ -1316,8 +1316,8 @@
         "fetch": "yasaka_kanako",
         "pixiv": "八坂神奈子",
         "pagemax": [
-          592,
-          248,
+          593,
+          247,
           8
         ]
       },
@@ -1326,7 +1326,7 @@
         "fetch": "ibaraki_kasen",
         "pixiv": "茨木華扇",
         "pagemax": [
-          332,
+          333,
           161,
           7
         ]
@@ -1336,7 +1336,7 @@
         "fetch": "haniyasushin_keiki",
         "pixiv": "埴安神袿姫",
         "pagemax": [
-          85,
+          86,
           59,
           6
         ]
@@ -1346,7 +1346,7 @@
         "fetch": "kamishirasawa_keine",
         "pixiv": "上白沢慧音",
         "pagemax": [
-          816,
+          817,
           265,
           9
         ]
@@ -1374,8 +1374,8 @@
         "fetch": "koakuma",
         "pixiv": "小悪魔(東方Project)",
         "pagemax": [
-          737,
-          47,
+          738,
+          48,
           10
         ]
       },
@@ -1384,7 +1384,7 @@
         "fetch": "tatara_kogasa",
         "pixiv": "多々良小傘",
         "pagemax": [
-          839,
+          840,
           408,
           14
         ]
@@ -1396,7 +1396,7 @@
         "pagemax": [
           1000,
           1000,
-          87
+          88
         ]
       },
       "komachionozuka": {
@@ -1404,8 +1404,8 @@
         "fetch": "onozuka_komachi",
         "pixiv": "小野塚小町",
         "pagemax": [
-          448,
-          210,
+          449,
+          209,
           7
         ]
       },
@@ -1442,8 +1442,8 @@
         "fetch": "niwatari_kutaka",
         "pixiv": "庭渡久侘歌",
         "pagemax": [
-          87,
-          84,
+          88,
+          1,
           7
         ]
       },
@@ -1452,8 +1452,8 @@
         "fetch": "kasodani_kyouko",
         "pixiv": "幽谷響子",
         "pagemax": [
-          312,
-          161,
+          313,
+          1,
           7
         ]
       },
@@ -1463,7 +1463,7 @@
         "pixiv": "レイラ・プリズムリバー",
         "pagemax": [
           9,
-          7
+          1
         ],
         "gelbooru": false
       },
@@ -1473,7 +1473,7 @@
         "pixiv": "レティ・ホワイトロック",
         "pagemax": [
           245,
-          151,
+          1,
           6
         ]
       },
@@ -1482,8 +1482,8 @@
         "fetch": "lily_white",
         "pixiv": "リリーホワイト",
         "pagemax": [
-          201,
-          162,
+          202,
+          1,
           6
         ]
       },
@@ -1493,7 +1493,7 @@
         "pixiv": "ルイズ(東方Project)",
         "pagemax": [
           17,
-          8
+          1
         ],
         "gelbooru": false
       },
@@ -1502,8 +1502,8 @@
         "fetch": "lunasa_prismriver",
         "pixiv": "ルナサ・プリズムリバー",
         "pagemax": [
-          172,
-          74,
+          173,
+          1,
           3
         ]
       },
@@ -1513,7 +1513,7 @@
         "pixiv": "リリカ・プリズムリバー",
         "pagemax": [
           126,
-          58,
+          1,
           3
         ]
       },
@@ -1523,7 +1523,7 @@
         "pixiv": "マイ(東方Project)",
         "pagemax": [
           27,
-          22
+          1
         ],
         "gelbooru": false
       },
@@ -1533,7 +1533,7 @@
         "pixiv": "丁礼田舞",
         "pagemax": [
           76,
-          38,
+          1,
           3
         ]
       },
@@ -1543,7 +1543,7 @@
         "pixiv": "二ッ岩マミゾウ",
         "pagemax": [
           255,
-          101,
+          1,
           4
         ]
       },
@@ -1552,8 +1552,8 @@
         "fetch": "maribel_hearn",
         "pixiv": "マエリベリー・ハーン",
         "pagemax": [
-          451,
-          254,
+          454,
+          1,
           17
         ]
       },
@@ -1563,8 +1563,8 @@
         "pixiv": "霧雨魔理沙",
         "pagemax": [
           1000,
-          1000,
-          84
+          1,
+          86
         ]
       },
       "mayumijoutouguu": {
@@ -1573,7 +1573,7 @@
         "pixiv": "杖刀偶磨弓",
         "pagemax": [
           75,
-          53,
+          1,
           5
         ]
       },
@@ -1582,9 +1582,9 @@
         "fetch": "medicine_melancholy",
         "pixiv": "憂鬱",
         "pagemax": [
-          179,
-          28,
-          4
+          180,
+          1,
+          5
         ]
       },
       "meira": {
@@ -1593,7 +1593,7 @@
         "pixiv": "明羅",
         "pagemax": [
           20,
-          13
+          1
         ],
         "gelbooru": false
       },
@@ -1602,8 +1602,8 @@
         "fetch": "merlin_prismriver",
         "pixiv": "メルラン・プリズムリバー",
         "pagemax": [
-          129,
-          54,
+          130,
+          1,
           3
         ]
       },
@@ -1613,7 +1613,7 @@
         "pixiv": "豪徳寺ミケ",
         "pagemax": [
           49,
-          39,
+          1,
           4
         ]
       },
@@ -1623,7 +1623,7 @@
         "pixiv": "mima",
         "pagemax": [
           100,
-          2,
+          1,
           3
         ]
       },
@@ -1632,8 +1632,8 @@
         "fetch": "murasa_minamitsu",
         "pixiv": "村紗水蜜",
         "pagemax": [
-          356,
-          195,
+          358,
+          1,
           6
         ]
       },
@@ -1643,7 +1643,7 @@
         "pixiv": "秋穣子",
         "pagemax": [
           283,
-          166,
+          1,
           7
         ]
       },
@@ -1652,8 +1652,8 @@
         "fetch": "okunoda_miyoi",
         "pixiv": "奥野田美宵",
         "pagemax": [
-          31,
-          16,
+          32,
+          1,
           2
         ]
       },
@@ -1663,7 +1663,7 @@
         "pixiv": "犬走椛",
         "pagemax": [
           1000,
-          580,
+          1,
           18
         ]
       },
@@ -1672,8 +1672,8 @@
         "fetch": "mononobe_no_futo",
         "pixiv": "物部布都",
         "pagemax": [
-          464,
-          266,
+          465,
+          1,
           11
         ]
       },
@@ -1683,7 +1683,7 @@
         "pixiv": "夢月",
         "pagemax": [
           26,
-          30,
+          1,
           1
         ]
       },
@@ -1692,8 +1692,8 @@
         "fetch": "hijiri_byakuren",
         "pixiv": "聖白蓮",
         "pagemax": [
-          660,
-          268,
+          661,
+          1,
           8
         ]
       },
@@ -1702,8 +1702,8 @@
         "fetch": "mystia_lorelei",
         "pixiv": "ミスティア・ローレライ",
         "pagemax": [
-          746,
-          250,
+          748,
+          1,
           27
         ]
       },
@@ -1713,7 +1713,7 @@
         "pixiv": "矢田寺成美",
         "pagemax": [
           42,
-          46,
+          1,
           2
         ]
       },
@@ -1722,9 +1722,9 @@
         "fetch": "nazrin",
         "pixiv": "ナズーリン",
         "pagemax": [
-          681,
-          511,
-          17
+          684,
+          1,
+          18
         ]
       },
       "nemunosakata": {
@@ -1733,7 +1733,7 @@
         "pixiv": "坂田ネムノ",
         "pagemax": [
           36,
-          23,
+          1,
           1
         ]
       },
@@ -1742,8 +1742,8 @@
         "fetch": "kawashiro_nitori",
         "pixiv": "河城にとり",
         "pagemax": [
-          832,
-          454,
+          834,
+          1,
           15
         ]
       },
@@ -1752,9 +1752,9 @@
         "fetch": "houjuu_nue",
         "pixiv": "封獣ぬえ",
         "pagemax": [
-          631,
-          325,
-          9
+          632,
+          1,
+          10
         ]
       },
       "okinamatara": {
@@ -1763,7 +1763,7 @@
         "pixiv": "摩多羅隠岐奈",
         "pagemax": [
           134,
-          74,
+          1,
           6
         ]
       },
@@ -1773,7 +1773,7 @@
         "pixiv": "オレンジ(東方Project)",
         "pagemax": [
           11,
-          2
+          1
         ],
         "gelbooru": false
       },
@@ -1783,7 +1783,7 @@
         "pixiv": "水橋パルスィ",
         "pagemax": [
           578,
-          327,
+          1,
           10
         ]
       },
@@ -1793,8 +1793,8 @@
         "pixiv": "パチュリー・ノーレッジ",
         "pagemax": [
           1000,
-          470,
-          23
+          1,
+          24
         ]
       },
       "raikohorikawa": {
@@ -1802,8 +1802,8 @@
         "fetch": "horikawa_raiko",
         "pixiv": "堀川雷鼓",
         "pagemax": [
-          95,
-          59,
+          96,
+          1,
           2
         ]
       },
@@ -1813,7 +1813,7 @@
         "pixiv": "八雲藍",
         "pagemax": [
           1000,
-          419,
+          1,
           18
         ]
       },
@@ -1823,8 +1823,8 @@
         "pixiv": "博麗霊夢",
         "pagemax": [
           1000,
-          1000,
-          102
+          1,
+          105
         ]
       },
       "reisenudongeininaba": {
@@ -1833,8 +1833,8 @@
         "pixiv": "鈴仙・優曇華院・イナバ",
         "pagemax": [
           1000,
-          493,
-          24
+          1,
+          25
         ]
       },
       "remiliascarlet": {
@@ -1843,8 +1843,8 @@
         "pixiv": "レミリア・スカーレット",
         "pagemax": [
           1000,
-          998,
-          56
+          1,
+          57
         ]
       },
       "renkousami": {
@@ -1852,8 +1852,8 @@
         "fetch": "usami_renko",
         "pixiv": "宇佐見蓮子",
         "pagemax": [
-          468,
-          285,
+          470,
+          1,
           18
         ]
       },
@@ -1883,7 +1883,7 @@
         "pixiv": "鈴瑚",
         "pagemax": [
           92,
-          55,
+          56,
           3
         ]
       },
@@ -1892,7 +1892,7 @@
         "fetch": "kaenbyou_rin",
         "pixiv": "火焔猫燐",
         "pagemax": [
-          977,
+          979,
           299,
           29
         ],
@@ -1906,7 +1906,7 @@
         "pixiv": "冴月麟",
         "pagemax": [
           16,
-          21,
+          22,
           1
         ]
       },
@@ -1914,7 +1914,7 @@
         "name": "Rinnosuke Morichika",
         "fetch": "morichika_rinnosuke",
         "pagemax": [
-          481,
+          482,
           4
         ]
       },
@@ -1923,7 +1923,7 @@
         "fetch": "rumia",
         "pixiv": "ルーミア",
         "pagemax": [
-          967,
+          969,
           1000,
           25
         ]
@@ -1954,7 +1954,7 @@
         "pixiv": "西行妖",
         "pagemax": [
           21,
-          6
+          5
         ],
         "gelbooru": false
       },
@@ -1963,7 +1963,7 @@
         "fetch": "kurokoma_saki",
         "pixiv": "驪駒早鬼",
         "pagemax": [
-          97,
+          98,
           50,
           4
         ]
@@ -1974,8 +1974,8 @@
         "pixiv": "十六夜咲夜",
         "pagemax": [
           1000,
-          991,
-          33
+          990,
+          34
         ]
       },
       "sanaekochiya": {
@@ -1985,7 +1985,7 @@
         "pagemax": [
           1000,
           768,
-          23
+          24
         ]
       },
       "sannyokomakusa": {
@@ -2012,7 +2012,7 @@
         "name": "Sariel",
         "fetch": "sariel_(touhou)",
         "pagemax": [
-          23,
+          24,
           1
         ]
       },
@@ -2033,7 +2033,7 @@
         "pagemax": [
           1000,
           763,
-          39
+          40
         ]
       },
       "seigakaku": {
@@ -2041,7 +2041,7 @@
         "fetch": "kaku_seiga",
         "pixiv": "霍青娥",
         "pagemax": [
-          362,
+          363,
           153,
           7
         ]
@@ -2051,8 +2051,8 @@
         "fetch": "kijin_seija",
         "pixiv": "鬼人正邪",
         "pagemax": [
-          292,
-          175,
+          293,
+          176,
           7
         ]
       },
@@ -2062,7 +2062,7 @@
         "pixiv": "清蘭",
         "pagemax": [
           108,
-          113,
+          114,
           4
         ]
       },
@@ -2071,8 +2071,8 @@
         "fetch": "sekibanki",
         "pixiv": "赤蛮奇",
         "pagemax": [
-          288,
-          171,
+          289,
+          172,
           9
         ]
       },
@@ -2081,7 +2081,7 @@
         "fetch": "shanghai_doll",
         "pixiv": "上海人形",
         "pagemax": [
-          456,
+          458,
           94,
           8
         ]
@@ -2091,7 +2091,7 @@
         "fetch": "shiki_eiki",
         "pixiv": "Yamaxanadu",
         "pagemax": [
-          455,
+          456,
           1,
           11
         ]
@@ -2112,7 +2112,7 @@
         "pixiv": "神綺",
         "pagemax": [
           107,
-          67,
+          66,
           2
         ]
       },
@@ -2121,7 +2121,7 @@
         "fetch": "sukuna_shinmyoumaru",
         "pixiv": "少名針妙丸",
         "pagemax": [
-          255,
+          256,
           137,
           7
         ]
@@ -2131,7 +2131,7 @@
         "fetch": "yorigami_shion",
         "pixiv": "依神紫苑",
         "pagemax": [
-          169,
+          170,
           102,
           7
         ]
@@ -2142,7 +2142,7 @@
         "pixiv": "秋静葉",
         "pagemax": [
           250,
-          168,
+          169,
           6
         ]
       },
@@ -2152,7 +2152,7 @@
         "pixiv": "寅丸星",
         "pagemax": [
           395,
-          281,
+          280,
           6
         ]
       },
@@ -2161,7 +2161,7 @@
         "fetch": "soga_no_tojiko",
         "pixiv": "蘇我屠自古",
         "pagemax": [
-          319,
+          320,
           163,
           8
         ]
@@ -2179,7 +2179,7 @@
         "fetch": "star_sapphire",
         "pixiv": "スターサファイア",
         "pagemax": [
-          165,
+          166,
           75,
           5
         ]
@@ -2189,9 +2189,9 @@
         "fetch": "ibuki_suika",
         "pixiv": "伊吹萃香",
         "pagemax": [
-          704,
+          707,
           340,
-          13
+          14
         ]
       },
       "sumirekousami": {
@@ -2199,7 +2199,7 @@
         "fetch": "usami_sumireko",
         "pixiv": "宇佐見菫子",
         "pagemax": [
-          169,
+          170,
           75,
           5
         ]
@@ -2209,7 +2209,7 @@
         "fetch": "sunny_milk",
         "pixiv": "サニーミルク",
         "pagemax": [
-          150,
+          151,
           79,
           4
         ]
@@ -2219,9 +2219,9 @@
         "fetch": "moriya_suwako",
         "pixiv": "洩矢諏訪子",
         "pagemax": [
-          955,
-          496,
-          19
+          958,
+          497,
+          20
         ]
       },
       "takaneyamashiro": {
@@ -2239,7 +2239,7 @@
         "fetch": "hinanawi_tenshi",
         "pixiv": "比那名居天子",
         "pagemax": [
-          804,
+          806,
           470,
           14
         ]
@@ -2249,7 +2249,7 @@
         "fetch": "inaba_tewi",
         "pixiv": "因幡てゐ",
         "pagemax": [
-          707,
+          708,
           300,
           15
         ]
@@ -2269,7 +2269,7 @@
         "fetch": "toyosatomimi_no_miko",
         "pixiv": "Toyosatomimi",
         "pagemax": [
-          510,
+          511,
           1,
           10
         ]
@@ -2299,7 +2299,7 @@
         "fetch": "reiuji_utsuho",
         "pixiv": "霊烏路空",
         "pagemax": [
-          910,
+          912,
           438,
           18
         ]
@@ -2329,7 +2329,7 @@
         "fetch": "watatsuki_no_yorihime",
         "pixiv": "綿月依姫",
         "pagemax": [
-          86,
+          87,
           50,
           1
         ]
@@ -2347,7 +2347,7 @@
         "fetch": "kicchou_yachie",
         "pixiv": "吉弔八千慧",
         "pagemax": [
-          127,
+          128,
           74,
           10
         ]
@@ -2357,7 +2357,7 @@
         "fetch": "kurodani_yamame",
         "pixiv": "黒谷ヤマメ",
         "pagemax": [
-          312,
+          313,
           168,
           5
         ]
@@ -2377,7 +2377,7 @@
         "fetch": "miyako_yoshika",
         "pixiv": "宮古芳香",
         "pagemax": [
-          313,
+          314,
           179,
           7
         ]
@@ -2388,7 +2388,7 @@
         "pixiv": "魂魄妖夢",
         "pagemax": [
           41,
-          955
+          953
         ],
         "gelbooru": false
       },
@@ -2398,8 +2398,8 @@
         "pixiv": "魂魄妖夢",
         "pagemax": [
           1000,
-          955,
-          40
+          953,
+          41
         ]
       },
       "yukariyakumo": {
@@ -2408,7 +2408,7 @@
         "pixiv": "八雲紫",
         "pagemax": [
           1000,
-          669,
+          668,
           26
         ]
       },
@@ -2418,7 +2418,7 @@
         "pixiv": "ユキ(東方Project)",
         "pagemax": [
           23,
-          9
+          10
         ],
         "gelbooru": false
       },
@@ -2436,7 +2436,7 @@
         "pixiv": "岡崎夢美",
         "pagemax": [
           55,
-          56,
+          57,
           2
         ]
       },
@@ -2456,7 +2456,7 @@
         "pixiv": "星熊勇儀",
         "pagemax": [
           480,
-          183,
+          182,
           4
         ]
       },
@@ -2465,8 +2465,8 @@
         "fetch": "kazami_yuuka",
         "pixiv": "風見幽香",
         "pagemax": [
-          902,
-          516,
+          904,
+          515,
           15
         ]
       },
@@ -2476,7 +2476,7 @@
         "pixiv": "西行寺幽々子",
         "pagemax": [
           1000,
-          484,
+          483,
           23
         ]
       },
@@ -2510,7 +2510,7 @@
         "fetch": "alice_zuberg",
         "pixiv": "アリス・ツーベルク",
         "pagemax": [
-          51,
+          52,
           13
         ],
         "gelbooru": false
@@ -2783,7 +2783,7 @@
         "pixiv": "キバオウ",
         "pagemax": [
           1,
-          3
+          4
         ],
         "gelbooru": false
       },
@@ -2802,8 +2802,8 @@
         "fetch": "kirito",
         "pixiv": "キリト",
         "pagemax": [
-          164,
-          170,
+          165,
+          169,
           1
         ]
       },
@@ -2820,7 +2820,7 @@
         "fetch": "kirigaya_suguha",
         "pixiv": "桐ヶ谷直葉",
         "pagemax": [
-          91,
+          92,
           17
         ],
         "gelbooru": false
@@ -2985,7 +2985,7 @@
         "pixiv": "ピナ",
         "pagemax": [
           23,
-          6
+          1
         ],
         "gelbooru": false
       },
@@ -3005,7 +3005,7 @@
         "pixiv": "クィネラ",
         "pagemax": [
           9,
-          3
+          1
         ],
         "gelbooru": false
       },
@@ -3031,7 +3031,7 @@
         "pixiv": "ロニエ・アラベル",
         "pagemax": [
           8,
-          4
+          1
         ],
         "gelbooru": false
       },
@@ -3041,7 +3041,7 @@
         "pixiv": "ロニエ・アラベル",
         "pagemax": [
           1,
-          4
+          1
         ],
         "gelbooru": false
       },
@@ -3051,7 +3051,7 @@
         "pixiv": "サチ",
         "pagemax": [
           8,
-          11
+          1
         ],
         "gelbooru": false
       },
@@ -3103,7 +3103,7 @@
         "pixiv": "重村悠那",
         "pagemax": [
           1,
-          2
+          1
         ],
         "gelbooru": false
       },
@@ -3155,7 +3155,7 @@
         "pixiv": "ストレア(SAO)",
         "pagemax": [
           6,
-          2
+          1
         ],
         "gelbooru": false
       },
@@ -3265,7 +3265,7 @@
         "pixiv": "ユイ(SAO)",
         "pagemax": [
           26,
-          6
+          1
         ],
         "gelbooru": false
       },
@@ -3283,7 +3283,7 @@
         "pixiv": "アスナ(SAO)",
         "pagemax": [
           263,
-          59,
+          1,
           3
         ]
       },
@@ -3293,7 +3293,292 @@
         "pixiv": "ユナ",
         "pagemax": [
           6,
-          21
+          1
+        ],
+        "gelbooru": false
+      }
+    }
+  },
+  "zzz": {
+    "value": "Zenless Zone Zero",
+    "characters": {
+      "belle": {
+        "name": "Belle",
+        "fetch": "belle_(zenless_zone_zero)",
+        "pixiv": "リン(ゼンゼロ)",
+        "pagemax": [
+          106,
+          15,
+          6
+        ]
+      },
+      "wisezzz": {
+        "name": "Wise",
+        "fetch": "wise_(zenless_zone_zero)",
+        "pixiv": "アキラ(ゼンゼロ)",
+        "pagemax": [
+          84,
+          8,
+          5
+        ]
+      },
+      "nekomiyamana": {
+        "name": "Nekomiya Mana",
+        "fetch": "nekomiya_mana",
+        "pixiv": "猫宮又奈",
+        "pagemax": [
+          31,
+          9
+        ],
+        "gelbooru": false
+      },
+      "billykid": {
+        "name": "Billy Kid",
+        "fetch": "billy_kid",
+        "pixiv": "ビリー・キッド",
+        "pagemax": [
+          26,
+          5,
+          1
+        ]
+      },
+      "nicoledemara": {
+        "name": "Nicole Demara",
+        "fetch": "nicole_demara",
+        "pixiv": "ニコ・デマラ",
+        "pagemax": [
+          127,
+          17,
+          1
+        ]
+      },
+      "anbydemara": {
+        "name": "Anby Demara",
+        "fetch": "anby_demara",
+        "pixiv": "アンビー・デマラ",
+        "pagemax": [
+          49,
+          13,
+          2
+        ]
+      },
+      "lighter": {
+        "name": "Lighter",
+        "fetch": "lighter_(zenless_zone_zero)",
+        "pixiv": "lighter zzz",
+        "pagemax": [
+          25,
+          1,
+          2
+        ]
+      },
+      "burnice": {
+        "name": "Burnice",
+        "fetch": "burnice_white",
+        "pixiv": "バーニス・ホワイト",
+        "pagemax": [
+          74,
+          10
+        ],
+        "gelbooru": false
+      },
+      "caesarking": {
+        "name": "Caesar King",
+        "fetch": "caesar_king_(zenless_zone_zero)",
+        "pixiv": "キング・シーザー",
+        "pagemax": [
+          46,
+          6
+        ],
+        "gelbooru": false
+      },
+      "piperwheel": {
+        "name": "Piper Wheel",
+        "fetch": "piper_wheel",
+        "pixiv": "パイパー・ウィール",
+        "pagemax": [
+          27,
+          6
+        ],
+        "gelbooru": false
+      },
+      "lucy": {
+        "name": "Lucy",
+        "fetch": "luciana_de_montefio",
+        "pixiv": "ルシアーナ・デ・モンテフィーノ",
+        "pagemax": [
+          56,
+          1,
+          1
+        ]
+      },
+      "sethlowell": {
+        "name": "Seth Lowell",
+        "fetch": "seth_lowell",
+        "pixiv": "セス・ローウェル",
+        "pagemax": [
+          41,
+          3,
+          2
+        ]
+      },
+      "qingyi": {
+        "name": "Qingyi",
+        "fetch": "qingyi_(zenless_zone_zero)",
+        "pixiv": "Qingyi",
+        "pagemax": [
+          52,
+          4,
+          1
+        ]
+      },
+      "zhuyuan": {
+        "name": "Zhu Yuan",
+        "fetch": "zhu_yuan",
+        "pixiv": "朱鳶",
+        "pagemax": [
+          107,
+          9,
+          4
+        ]
+      },
+      "asabaharumasa": {
+        "name": "Asaba hHrumasa",
+        "fetch": "asaba_harumasa",
+        "pixiv": "浅羽悠真",
+        "pagemax": [
+          42,
+          9,
+          5
+        ]
+      },
+      "tsukishiroyanagi": {
+        "name": "Tsukishiro Yanagi",
+        "fetch": "tsukishiro_yanagi ",
+        "pixiv": "月城柳",
+        "pagemax": [
+          107,
+          10,
+          6
+        ]
+      },
+      "hoshimimiyabi": {
+        "name": "Hoshimi Miyabi",
+        "fetch": "hoshimi_miyabi",
+        "pixiv": "星見雅",
+        "pagemax": [
+          166,
+          28,
+          18
+        ]
+      },
+      "soukaku": {
+        "name": "Soukaku",
+        "fetch": "soukaku_(zenless_zone_zero) ",
+        "pixiv": "蒼角",
+        "pagemax": [
+          51,
+          10,
+          5
+        ]
+      },
+      "gracehoward": {
+        "name": "Grace Howard",
+        "fetch": "grace_howard",
+        "pixiv": "グレース・ハワード",
+        "pagemax": [
+          55,
+          6
+        ],
+        "gelbooru": false
+      },
+      "benbigger": {
+        "name": "Ben Bigger",
+        "fetch": "ben_bigger",
+        "pixiv": "ベン・ビガー",
+        "pagemax": [
+          21,
+          2,
+          2
+        ]
+      },
+      "antonivanov": {
+        "name": "Anton Ivanov",
+        "fetch": "anton_ivanov",
+        "pixiv": "アンドー・イワノフ",
+        "pagemax": [
+          11,
+          3
+        ],
+        "gelbooru": false
+      },
+      "koledabelobog": {
+        "name": "Koleda Belobog",
+        "fetch": "koleda_belobog",
+        "pixiv": "クレタ・ベロボーグ",
+        "pagemax": [
+          31,
+          8,
+          1
+        ]
+      },
+      "ellenjoe": {
+        "name": "Ellen Joe",
+        "fetch": "ellen_joe",
+        "pixiv": "エレン・ジョー",
+        "pagemax": [
+          237,
+          56,
+          11
+        ]
+      },
+      "alexandrina": {
+        "name": "Alexandrina Sebastiane",
+        "fetch": "alexandrina_sebastiane",
+        "pixiv": "アレクサンドリナ・セバスチャン",
+        "pagemax": [
+          34,
+          5,
+          2
+        ]
+      },
+      "vonlycaon": {
+        "name": "Von Lycaon",
+        "fetch": "von_lycaon",
+        "pixiv": "フォン・ライカン",
+        "pagemax": [
+          60,
+          9,
+          6
+        ]
+      },
+      "corinwickes": {
+        "name": "Corin Wickes",
+        "fetch": "corin_wickes",
+        "pixiv": "カリン・ウィクス",
+        "pagemax": [
+          44,
+          14,
+          4
+        ]
+      },
+      "astrayao": {
+        "name": "Astra Yao",
+        "fetch": "astra_yao",
+        "pixiv": "アストラ・ヤオ",
+        "pagemax": [
+          15,
+          2
+        ],
+        "gelbooru": false
+      },
+      "evelynchevalier": {
+        "name": "Evelyn Chevalier",
+        "fetch": "evelyn_chevalier",
+        "pixiv": "イヴリン",
+        "pagemax": [
+          17,
+          5
         ],
         "gelbooru": false
       }
@@ -3306,7 +3591,7 @@
         "name": "Taiga Aisaka",
         "fetch": "aisaka_taiga",
         "pagemax": [
-          160,
+          161,
           3
         ]
       },
@@ -3351,7 +3636,7 @@
         "name": "Hoshino Ruby",
         "fetch": "hoshino_ruby",
         "pagemax": [
-          81,
+          82,
           10
         ]
       },
@@ -3367,7 +3652,7 @@
         "name": "Kurokawa Akane",
         "fetch": "kurokawa_akane",
         "pagemax": [
-          46,
+          47,
           5
         ]
       },
@@ -3388,7 +3673,7 @@
         "name": "Megumin",
         "fetch": "megumin",
         "pagemax": [
-          421,
+          423,
           9
         ],
         "nsfw": false
@@ -3431,7 +3716,7 @@
         "name": "Kitagawa",
         "fetch": "kitagawa_marin",
         "pagemax": [
-          223,
+          224,
           3
         ],
         "nsfw": false
@@ -3445,7 +3730,7 @@
         "name": "Rei",
         "fetch": "ayanami_rei",
         "pagemax": [
-          440,
+          442,
           13
         ],
         "nsfw": false
@@ -3460,7 +3745,7 @@
         "fetch": "johnny_joestar",
         "pixiv": "ジョニィ・ジョースター",
         "pagemax": [
-          98,
+          99,
           50,
           1
         ]
@@ -3485,7 +3770,7 @@
         "name": "Yukihana",
         "fetch": "yukihana_lamy",
         "pagemax": [
-          255,
+          257,
           6
         ],
         "nsfw": true,
@@ -3501,8 +3786,8 @@
         "name": "Teto",
         "fetch": "kasane_teto",
         "pagemax": [
-          374,
-          54
+          382,
+          55
         ],
         "nsfw": false
       },
@@ -3510,7 +3795,7 @@
         "name": "Tohsaka",
         "fetch": "tohsaka_rin",
         "pagemax": [
-          452,
+          454,
           5
         ],
         "nsfw": true
@@ -3520,7 +3805,7 @@
         "fetch": "artoria_pendragon_(fate)",
         "pagemax": [
           1000,
-          27
+          28
         ],
         "nsfw": false
       },
@@ -3575,7 +3860,7 @@
         "fetch": "arcueid_brunestud",
         "pixiv": "アルクェイド・ブリュンスタッド",
         "pagemax": [
-          160,
+          161,
           52,
           5
         ]
