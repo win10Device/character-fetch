@@ -211,7 +211,6 @@ async function fetchPixiv(character, char_cache, nsfw) {
           }
         });
       });
-      console.log(response);
       item.blocked = blocked;
       response.data.body.illustManga.data = response.data.body.illustManga.data.filter(item => (typeof(item.id)!=='undefined'));
       if (response.data.body.illustManga.data.length<=0)i++;
@@ -319,8 +318,8 @@ module.exports = {
                     .setTitle('Fetch')
                     .setURL(`${char.data.uri}`)
                     .addFields(
-                      { name: 'Blocked Porn Post(s)', value: `${char.blocked.length}`, inline: true },
-                      { name: 'Overall Retries', value: `${char.count}`, inline: true },
+                      { name: 'Blocked Post(s)', value: `${char.blocked.length}`, inline: true },
+                      { name: 'Retries', value: `${char.count}`, inline: true },
                     )
                     .setImage(char.data.img)
                     .addFields(
@@ -342,7 +341,7 @@ module.exports = {
                         if (res.data != null) {
                           if (res.data.embeds[0].image)
                             if(res.data.embeds[0].image.width == 0) {
-                              message.reply(`Discord failed to embed the image - so... [image](${char.data.img})`);
+                              message.reply(`Discord failed to embed the image.\n-# Sometimes Discord will not load the image just from the embed, so linking the [image](${char.data.img}) here will make Discord try again`);
                             }
                         }
                       })
