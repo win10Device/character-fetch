@@ -14,14 +14,10 @@ var banned_tags = JSON.parse(fs.readFileSync('json/banned_tags.json', 'utf8'));
 console.log("a");
 function getRandomInt(min, max){const minCeiled=Math.ceil(min);const maxFloored=Math.floor(max);return Math.floor(Math.random()*(maxFloored-minCeiled)+minCeiled);}
 async function getAverageColour(url){if(url==null)return{r:~~100,g:~~100,b:~~100};const image = await Jimp.read(url);var rgb={r:0,g:0,b:0};var count=0;for(let x=0;x<image.bitmap.width;x++)for(let y=0;y<image.bitmap.height;y++){var color=intToRGBA(image.getPixelColor(x,y));rgb.r+=color.r;rgb.g+=color.g;rgb.b+=color.b;count++;}return{r:~~Math.floor(rgb.r/count),g:~~Math.floor(rgb.g/count),b:~~Math.floor(rgb.b/count)};}
-async function fetchDanbooru(character, char_cache, nsfw) {
+
+async function fetchDanbooru(c, nsfw) {
   var i = 0;
   var blocked = [];
-  var key = Object.keys(char_cache).find(item =>(typeof char_cache[item].characters[character]!=='undefined'));
-  if (typeof(key) === 'undefined') {
-    return null;
-  }
-  var c = char_cache[key].characters[character];
   console.log(`Danbooru fetch - ${c.name}`);
   var item = { data: null, blocked: [], count: 0 };
   while(i <= 10) {
@@ -90,14 +86,9 @@ async function fetchDanbooru(character, char_cache, nsfw) {
   }
 }
 
-async function fetchGelbooru(character, char_cache, nsfw) {
+async function fetchGelbooru(c, nsfw) {
   var i = 0;
   var blocked = [];
-  var key = Object.keys(char_cache).find(item =>(typeof char_cache[item].characters[character]!=='undefined'));
-  if (typeof(key) === 'undefined') {
-    return null;
-  }
-  var c = char_cache[key].characters[character];
   if (typeof(c.gelbooru) !== 'undefined' && !c.gelbooru) {
     console.log("Gelbooru was set to false on this character - passing on to Danbooru fetcher");
     return await fetchDanbooru(character, char_cache, nsfw);
@@ -175,17 +166,12 @@ async function fetchGelbooru(character, char_cache, nsfw) {
   }
 }
 
-async function fetchPixiv(character, char_cache, nsfw) {
+async function fetchPixiv(c, nsfw) {
   var i = 0;
   var blocked = [];
-  var key = Object.keys(char_cache).find(item =>(typeof char_cache[item].characters[character]!=='undefined'));
-  if (typeof(key) === 'undefined') {
-    return null;
-  }
-  var c = char_cache[key].characters[character];
   if (typeof(c.pixiv) === 'undefined') {
     console.log("Pixiv tag was undefined on this character - passing on to Danbooru fetcher");
-    item = await fetchDanbooru(character, char_cache, nsfw);
+    item = await fetchDanbooru(c, nsfw);
     return item;
   }
   console.log(`Pixiv fetch - ${c.name}`);
@@ -240,22 +226,63 @@ async function fetchPixiv(character, char_cache, nsfw) {
     return item;
   }
 }
-async function getRandom(a, b, c) {
-  var n = getRandomInt(1,100);
-  switch (true) {
-    case (n < 33):
-      console.log(1);
-      return await fetchDanbooru(a, b, c);
-      break;
-    case (n >= 33 && n < 66):
-      console.log(2);
-      return await fetchPixiv(a, b, c);
-      break;
-    case (n >= 66 && n <= 100):
-      console.log(3);
-      return await fetchGelbooru(a, b, c);
-      break;
+async function getRandom(character, char_cache, nsfw) {
+try {
+  var key = Object.keys(char_cache).find(item =>(typeof char_cache[item].characters[character]!=='undefined'));
+  var c = char_cache[key].characters[character];
+
+  var pending = true;
+  var count = 0;
+  var temp = null;
+
+  var list = ["danbooru"];
+  if (typeof(c.pixiv) !== 'undefined') list.push("pixiv");
+  if (typeof(c.gelbooru) === 'undefined') list.push("gelbooru"); //Inverted because of boolean, need to change the format!
+  console.log(list);
+  var fetch = list[(list.length > 1) ? crypto.randomInt(0, list.length) : 0]
+
+  while (pending) {
+    count ++;
+    if (count > 4) {
+      return temp; //escape loop
+    }
+    switch (fetch) {
+      case "danbooru":
+        if((temp = await fetchDanbooru(c,nsfw)).data != null)
+          return temp;
+        else {
+          if (typeof(c.gelbooru) === 'undefined' && !c.gelbooru)
+            fetch = "gelbooru";
+          else {
+            if (typeof(c.pixiv) !== 'undefined')
+              fetch = "pixiv";
+            else pending = false;
+          }
+        }
+        break;
+      case "pixiv":
+        if((temp = await fetchPixiv(c,nsfw)).data != null)
+          return temp;
+        else {
+          if (typeof(c.gelbooru) === 'undefined' && !c.gelbooru)
+            fetch = "gelbooru";
+          else fetch = "danbooru";
+        }
+        break;
+      case "gelbooru":
+        if((temp = await fetchGelbooru(c,nsfw)).data != null)
+          return temp;
+        else {
+          if (typeof(c.pixiv) !== 'undefined')
+            fetch = "pixiv";
+          else fetch = "danbooru";
+        }
+        break;
+    }
   }
+} catch (e) {
+  console.log(e);
+}
 }
 module.exports = {
         data: new SlashCommandBuilder()
