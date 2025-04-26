@@ -229,6 +229,7 @@ async function fetchPixiv(c, nsfw) {
 async function getRandom(character, char_cache, nsfw) {
 try {
   var key = Object.keys(char_cache).find(item =>(typeof char_cache[item].characters[character]!=='undefined'));
+  if (typeof(key) === 'undefined') return null;
   var c = char_cache[key].characters[character];
 
   var pending = true;
