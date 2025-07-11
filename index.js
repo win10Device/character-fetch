@@ -6,99 +6,144 @@ const { ActivityType } = require('discord.js')
 const axios = require('axios');
 const path = require('path');
 const fs = require('fs');
-var list = JSON.parse(fs.readFileSync('json/list.json', 'utf8'));
+let mysql = require('mysql2');
+
 var stats = JSON.parse(fs.readFileSync('json/stats.json', 'utf8'));
 
-function rescan() {
-  Object.keys(list).forEach(function(key, idx, arr){
-    setTimeout(() => {
-      Object.keys(list[key].characters).forEach(function(k, i, a) {
-        try {
-          setTimeout(() => {
-            var char = list[key].characters[k].fetch;
-            axios.get(`https://danbooru.donmai.us/posts?tags=${char}`).then(function (response) {
-              var a = response.data.substring(response.data.lastIndexOf('<a class="paginator-page desktop-only"'));
-              var c = parseInt(a.substring(a.indexOf('">')+2, a.indexOf('</a>')));
-              console.log(`Updating Danbooru page max for ${list[key].characters[k].name}...`);
-              if (isNaN(c)) { list[key].characters[k].pagemax[0] = 1; console.log("HTML scrape returned null, assuming max page of 1..."); }
-              else list[key].characters[k].pagemax[0] = (c >= 1000) ? 1000 : c;
-
-              fs.writeFile('json/list.json', JSON.stringify(list,null,2), err => {
-                if (err) {
-                  console.error(err);
-                } else {
-                }
-              });
-
-            });
-            if (typeof(list[key].characters[k].pixiv) !== 'undefined') {
-              var char = encodeURIComponent(list[key].characters[k].pixiv);
-              axios.get(`https://www.pixiv.net/ajax/search/artworks/${char}?word=${char}&order=date_d&mode=all&p=1&csw=0&s_mode=s_tag_full&type=all&lang=en&version=1c9a02aed9d76a9163650e70702997c6ac3bf7b5`,
-              { headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:130.0) Gecko/20100101 Firefox/130.0', 'Cookie': config.pixiv.cookie }  }).then(function (response) {
-
-                var c = response.data.body.illustManga.lastPage;
-                console.log(`Updating Pixiv page max for ${list[key].characters[k].name}...`);
-                list[key].characters[k].pagemax[1] = c;
-
-                fs.writeFile('json/list.json', JSON.stringify(list,null,2), err => {
-                  if (err) {
-                    console.error(err);
-                  } else {
-                  }
-                });
-              });
-            }
-            var char = list[key].characters[k].fetch;
-            axios.get(`https://gelbooru.com/index.php?page=dapi&s=post&q=index&json=1&tags=${char}+rating%3ageneral`).then(function (response) {
-              console.log(`Updating Gelbooru page max for ${list[key].characters[k].name}...`);
-              c = Math.floor(response.data['@attributes'].count/100);
-              if (c == 0) list[key].characters[k].gelbooru = false;
-              else if (typeof(list[key].characters[k].gelbooru) !== 'undefined') delete list[key].characters[k].gelbooru;
-              else {
-                list[key].characters[k].pagemax[(typeof(list[key].characters[k].pixiv)==='undefined')?1:2]=(c>=200)?200:c;
-
-                fs.writeFile('json/list.json', JSON.stringify(list,null,2), err => {
-                  if (err) {
-                    console.error(err);
-                  } else {
-                  }
-                });
-              }
-
-            });
-          }, i * 2000);
-        } catch (e) {
-          console.error(`Failed to get for ${list[key].characters[k].name}!`);
-        }
-      });
-    }, (list[key].characters.length * 2000));
+async function sleep(ms) {
+  return new Promise(resolve => {
+    setTimeout(resolve, ms);
   });
-  //stats.last_reset = Date.now();
-  fs.writeFile('json/list.json', JSON.stringify(list,null,2), err => {
+}
+
+let con = mysql.createPool({ //mysql.createConnection({
+  host: config.db.address,
+  port: config.db.port,
+  user: config.db.user,
+  password: config.db.pass,
+  database: config.db.db,
+  waitForConnections: true,
+  connectionLimit: 20,
+  queueLimit: 0
+});
+
+stats.names = []; //List used for character name searching
+stats.name_meta = {};
+/*
+con.connect(async function(err) {
+  if (err) throw err;
+  console.log("Database connected!");
+  scan();
+});
+*/
+scan();
+
+function scan() {
+  con.query('SELECT * FROM characters;', async function(err,results) {
     if (err) {
-      console.error(err);
+      throw err;
+      return;
+    }
+    stats.names = [];
+    if (results.length > 0) {
+      let query = "";
+      const time = Math.floor(Date.now() / 1000);
+      for (i in results) {
+        let ch = results[i];
+        stats.names.push(ch.name);
+        stats.name_meta[ch.name] = ch.fullname;
+        let meta = JSON.parse(ch.fetchmeta);
+        let update = false;
+        const updated_at = Math.floor(new Date(ch.updated).getTime() / 1000);
+        if (time >= updated_at + 2629800) {
+          Object.keys(meta).forEach(async (key) => {
+            switch (key) {
+              case 'danbooru':
+                axios.get(`https://danbooru.donmai.us/posts?tags=${meta.danbooru.n}`).then(function (response) {
+                  let a = response.data.substring(response.data.lastIndexOf('<a class="paginator-page desktop-only"'));
+                  let c = parseInt(a.substring(a.indexOf('">')+2, a.indexOf('</a>')));
+                  console.log(`Getting Danbooru page max for ${ch.name}...`);
+                  if (isNaN(c)) {
+                    meta.danbooru.p = 1;
+                    console.log("HTML scrape returned null, assuming max page of 1...");
+                  } else {
+                    if (meta.danbooru.p != c) {
+                      update = true;
+                      meta.danbooru.p = (c >= 1000) ? 1000 : c;
+                    }
+                  }
+                });
+                break;
+              case 'gelbooru':
+                axios.get(`https://gelbooru.com/index.php?page=dapi&s=post&q=index&json=1&tags=${meta.gelbooru.n}+rating%3ageneral&api_key=${config.gelbooru.key}&user_id=${config.gelbooru.usr}`).then(function (response) {
+                  console.log(`Getting Gelbooru page max for ${ch.name}...`);
+                  let c = Math.floor(response.data['@attributes'].count/100);
+                  if (meta.gelbooru.p != c) {
+                    update = true;
+                    meta.gelbooru.p = (c >= 200) ? 200 : c;
+                  }
+                });
+                break;
+              case 'pixiv':
+                let char = encodeURIComponent(meta.pixiv.n);
+                axios.get(`https://www.pixiv.net/ajax/search/artworks/${char}?word=${char}&order=date_d&mode=all&p=1&csw=0&s_mode=s_tag_full&type=all&lang=en&version=1c9a02aed9d76a9163650e70702997c6ac3bf7b5`,
+                  {
+                    headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:130.0) Gecko/20100101 Firefox/130.0', 'Cookie': config.pixiv.cookie }
+                  }
+                ).then(function (response) {
+                  let c = response.data.body.illustManga.lastPage;
+                  console.log(`Getting Pixiv page max for ${ch.name}...`);
+                  if (meta.pixiv.p != c) {
+                    update = true;
+                    meta.pixiv.p = c;
+                  }
+                });
+                break;
+            }
+          });
+          await sleep(1000);
+          if (update == true) {
+            let str = JSON.stringify(meta);
+            con.execute('UPDATE characters SET fetchmeta=?, updated=CURRENT_TIMESTAMP() WHERE id=?', [str,ch.id], (err, results) => {
+              if (err) {
+                throw err;
+              }
+              if (results.warningStatus != 0 || results.affectedRows != 1) console.log('Unexpected Result from row update: ', results);
+              else console.log('OK');
+            });
+          }
+        }
+      }
+    } else {
+      console.warn("No characters in database to check!");
     }
   });
 }
-rescan();
+//var list = JSON.parse(fs.readFileSync('json/list.json', 'utf8'));
+//var stats = JSON.parse(fs.readFileSync('json/stats.json', 'utf8'));
+
+function rescan() {
+
+}
+//rescan();
 setInterval(function() {
   if(stats.last_reset + 2.628e+9 <= Date.now()) {
     stats.character = [];
     stats.general.monthly_fetch = 0;
     stats.general.monthly_block = 0;
     stats.last_reset = Date.now();
-    rescan();
+//    rescan();
   }
 }, 8.64e+7);
-setInterval(function() {
+//setInterval(function() {
+/*
   fs.writeFile('json/stats.json', JSON.stringify(stats,null,2), err => {
     if (err) {
       console.error(err);
     }
   });
-}, 60000);
-
-//const request = require('request');
+*/
+//}, 60000);
 
 // Create a new client instance
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
@@ -106,7 +151,7 @@ const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 // When the client is ready, run this code (only once).
 // The distinction between `client: Client<boolean>` and `readyClient: Client<true>` is important for TypeScript developers.
 // It makes some properties non-nullable.
-client.once(Events.ClientReady, readyClient => {
+client.once(Events.ClientReady, async readyClient => {
   console.log(`Ready! Logged in as ${readyClient.user.tag}`);
   client.user.setPresence({
     activities: [{
@@ -115,6 +160,13 @@ client.once(Events.ClientReady, readyClient => {
     }],
     status: 'online'
   });
+  client.lcommands = (await client.application.commands.fetch()).map((x)=>{return{id: x.id, name: x.name}})
+let userInstance = await client.users.cache;
+  console.log(userInstance);
+  /*client.lcommands.forEach((a) => {
+    console.log(a);
+  });*/
+  //console.log(client.application.fetch())
 });
 client.on(Events.InteractionCreate, interaction => {
   if (!interaction.isChatInputCommand()) return;
@@ -130,58 +182,61 @@ const foldersPath = path.join(__dirname, 'commands');
 const commandFolders = fs.readdirSync(foldersPath);
 
 for (const folder of commandFolders) {
-	const commandsPath = path.join(foldersPath, folder);
-	const commandFiles = fs.readdirSync(commandsPath).filter(file => file.endsWith('.js'));
-	for (const file of commandFiles) {
-		const filePath = path.join(commandsPath, file);
-		const command = require(filePath);
-		// Set a new item in the Collection with the key as the command name and the value as the exported module
-		if ('data' in command && 'execute' in command) {
-			client.commands.set(command.data.name, command);
-		} else {
-			console.log(`[WARNING] The command at ${filePath} is missing a required "data" or "execute" property.`);
-		}
-	}
+  const commandsPath = path.join(foldersPath, folder);
+  const commandFiles = fs.readdirSync(commandsPath).filter(file => file.endsWith('.js'));
+  for (const file of commandFiles) {
+    const filePath = path.join(commandsPath, file);
+    const command = require(filePath);
+    // Set a new item in the Collection with the key as the command name and the value as the exported module
+    if ('data' in command && 'execute' in command) {
+      client.commands.set(command.data.name, command);
+    } else {
+      console.log(`[WARNING] The command at ${filePath} is missing a required "data" or "execute" property.`);
+    }
+  }
 }
 client.on(Events.InteractionCreate, async interaction => {
-	if (!interaction.isChatInputCommand()) return;
-        if (interaction.guild != null)
-          if (interaction.guild.id == "1304480258527072307") { //'Rin's server
-            await interaction.reply({ content: `Sorry, but you aren't allowed to use the bot here`, ephemeral: true });
-            return;
-          }
-        if (interaction.user != null) {
-          switch (interaction.user.id) {
-            case "832898834358075414": //drew
-            case "708267426114043904": //reaper
-//            case "1137446289274052689": //pigeon
-//            case "1110254349227151383":
-//            case "606780722522357780":
-//            case "981855625371852860":
-//             case "489170266405208074": //Genki
-              await interaction.reply({ content: `get blocked idiot [haha](https://media.tenor.com/jkrntNKtKGkAAAAM/frieren-fern.gif)`, ephemeral: true});
-              return;
-          }
-        }
-	const command = interaction.client.commands.get(interaction.commandName);
-
-	if (!command) {
-		console.error(`No command matching ${interaction.commandName} was found.`);
-		return;
-	}
-
-	try {
-		await command.execute(interaction, client, list, stats);
-	} catch (error) {
-		console.error(error);
-		if (interaction.replied || interaction.deferred) {
-			await interaction.followUp({ content: 'There was an error while executing this command!', ephemeral: true });
-		} else {
-			await interaction.reply({ content: 'There was an error while executing this command!', ephemeral: true });
-		}
-	}
+//  if (!interaction.isChatInputCommand()) return;
+  if (interaction.guild != null)
+    if (interaction.guild.id == "1304480258527072307") { //'Rin's server
+      await interaction.reply({ content: `Sorry, but you aren't allowed to use the bot here`, ephemeral: true });
+      return;
+    }
+  if (interaction.user != null) {
+    switch (interaction.user.id) {
+//      case "832898834358075414": //drew
+      case "708267426114043904": //reaper
+        await interaction.reply({ content: `get blocked idiot [haha](https://media.tenor.com/jkrntNKtKGkAAAAM/frieren-fern.gif)`, ephemeral: true});
+        return;
+    }
+  }
+  try {
+    if (interaction.isChatInputCommand()) {
+      const command = interaction.client.commands.get(interaction.commandName);
+      if (typeof(command) === 'undefined') {
+        console.error(`No command matching ${interaction.commandName} was found.`);
+        return;
+      }
+      await command.execute(interaction, client, con, stats);
+    }
+    if (interaction.isStringSelectMenu()) {
+      const command = interaction.client.commands.get(interaction.message.interaction.commandName);
+      await command.otherInteraction(interaction, client, con, stats);
+    }
+    if (interaction.isButton()) {
+      const command = interaction.client.commands.get(interaction.message.interaction.commandName);
+      await command.buttonInteraction(interaction, client, con, stats);
+    }
+    if (interaction.isAutocomplete()) {
+      const command = interaction.client.commands.get(interaction.commandName);
+      await command.autocomplete(interaction, client, con, stats);
+    }
+  } catch (error) {
+    console.error(error);
+    if (interaction.replied || interaction.deferred) {
+      await interaction.followUp({ content: 'There was an error while executing this command!', ephemeral: true });
+    } else {
+      await interaction.reply({ content: 'There was an error while executing this command!', ephemeral: true });
+    }
+  }
 });
-//await rest.put(
-//	Routes.applicationCommands(clientId),
-//	{ body: commands },
-//);
