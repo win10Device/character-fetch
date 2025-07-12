@@ -50,6 +50,7 @@ CREATE TABLE `characters` (
   `cat` int(11) NOT NULL COMMENT 'category id',
   `fullname` text COMMENT 'Display name of character',
   `fetchmeta` text NOT NULL COMMENT 'JSON string of metadata used for fetch',
+  `bn` tinyint(1) NOT NULL DEFAULT '0' COMMENT 'blacklist character from NSFW fetch',
   `added` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `updated` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
