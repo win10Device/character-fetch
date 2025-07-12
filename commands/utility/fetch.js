@@ -1,10 +1,8 @@
-const { SlashCommandBuilder, ActionRowBuilder, ButtonBuilder, ButtonStyle, MessageFlags, ModalBuilder } = require('discord.js');
+const { SlashCommandBuilder, AttachmentBuilder, ActionRowBuilder, ButtonBuilder, ButtonStyle, MessageFlags, ModalBuilder, PermissionsBitField, EmbedBuilder } = require('discord.js');
 
 const axios = require('axios');
 const Discord = require('discord.js');
 const { Jimp, intToRGBA } = require('jimp');
-const { EmbedBuilder } = require('discord.js');
-const { AttachmentBuilder } = require('discord.js');
 const { Searcher, fuzzy } = require('fast-fuzzy');
 const crypto = require("crypto");
 const fs = require('fs');
@@ -16,6 +14,9 @@ console.log("a");
 function getRandomInt(min, max){const minCeiled=Math.ceil(min);const maxFloored=Math.floor(max);return Math.floor(Math.random()*(maxFloored-minCeiled)+minCeiled);}
 function generateRandomString(length,encoding='hex'){const byteLength=Math.ceil(length/2);return crypto.randomBytes(byteLength).toString(encoding).slice(0,length);}
 async function getAverageColour(url){if(url==null)return{r:~~100,g:~~100,b:~~100};const image = await Jimp.read(url);var rgb={r:0,g:0,b:0};var count=0;for(let x=0;x<image.bitmap.width;x++)for(let y=0;y<image.bitmap.height;y++){var color=intToRGBA(image.getPixelColor(x,y));rgb.r+=color.r;rgb.g+=color.g;rgb.b+=color.b;count++;}return{r:~~Math.floor(rgb.r/count),g:~~Math.floor(rgb.g/count),b:~~Math.floor(rgb.b/count)};}
+
+
+console.log(PermissionsBitField.Flags);
 
 function search(find, list, format) {
   let matches = [], found = [];
@@ -189,7 +190,8 @@ module.exports = {
         if (interaction.message.interactionMetadata.user.id == interaction.user.id) {
           try {
             const channel = await client.channels.fetch(interaction.message.channelId);
-            channel.messages.delete(interaction.message.id)
+            console.log(aaa.has(PermissionsBitField.Flags.ManageMessages));
+            await channel.messages.delete(interaction.message.id)
           } catch (e) {
             interaction.update({content:"(Deleted)\n-# Unable to delete actual message object, assuming user install",embeds:[],components:[]});
           }

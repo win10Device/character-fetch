@@ -1,6 +1,5 @@
 const axios = require('axios');
-const { EmbedBuilder } = require('discord.js');
-const { AttachmentBuilder } = require('discord.js');
+const { EmbedBuilder, AttachmentBuilder } = require('discord.js');
 const crypto = require("crypto");
 const fs = require('fs');
 var banned_tags = JSON.parse(fs.readFileSync('json/banned_tags.json', 'utf8'));
@@ -100,7 +99,8 @@ async function Gelbooru(c,config,nsfw) {
             blocked.push(tag);
           }
         });
-        if (!(["jpg","jpeg","gif","png","webp"]).includes(item.file_url)) delete response.data.post[index];
+        const ext = item.file_url.substring(item.file_url.lastIndexOf('.')+1)
+        if (!(["jpg","jpeg","gif","png","webp"]).includes(ext)) delete response.data.post[index];
         if (item.tags.includes("video")) delete response.data.post[index];
         if (item.tags.includes("comic")) delete response.data.post[index];
       });
