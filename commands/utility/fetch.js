@@ -39,11 +39,11 @@ function search(find, list, format) {
       found.push(val[0]);
   return found;
 }
-async function Rnd(c) {
+async function Rnd(c,nsfw) {
   const func = Fetcher.fetchers;
   const options = Object.keys(c);
   const option = options[getRandomInt(0,options.length)];
-  return await func[option](c[option],config);
+  return await func[option](c[option],config,nsfw);
 }
 module.exports = {
   data: new SlashCommandBuilder()
@@ -54,13 +54,25 @@ module.exports = {
       const r = typeof(refresh) !== 'undefined'
       if (!r)
         await interaction.deferReply({ ephemeral: false, fetchReply: true });
-      var a = null;
+      let a = null, nsfw = false;
       if (!r) {
         if (interaction.options != null) {
-          if (interaction.options["_hoistedOptions"].length > 0)
-            a = interaction.options["_hoistedOptions"][0].value;
+          if (interaction.options["_hoistedOptions"].length > 0) {
+            const cv = interaction.options["_hoistedOptions"].find((x) => x.name == 'character');
+            const cn = interaction.options["_hoistedOptions"].find((x) => x.name == 'nsfw');
+            a = (typeof(cv) !== 'undefined') ? cv.value : null;
+            nsfw = (typeof(cn) !== 'undefined') ? cn.value : false;
+            if (nsfw)
+              if (!interaction.channel.nsfw && a != null) {
+                await interaction.editReply({content: "You cannot fetch an NSFW image here!"});
+                return;
+              }
+          }
         }
-      } else a = refresh.value;
+      } else {
+        a = refresh.value;
+        nsfw = refresh.nsfw;
+      }
       if (a != null) {
         const sql = 'SELECT * FROM characters WHERE name = ?';
         con.execute(sql, [a], async (err, results) => {
@@ -71,7 +83,7 @@ module.exports = {
           }
           if (results.length > 0) {
             const c = JSON.parse(results[0].fetchmeta);
-            const char = await Rnd(c); //(typeof(c.pixiv) !== 'undefined') ? await fetchPixiv(c.pixiv) : await fetchDanbooru(c.danbooru);
+            const char = await Rnd(c,nsfw);
             if (char != null && char.data != null) {
               const id = generateRandomString(16,'hex');
               const color = await getAverageColour(char.data.thumbnail);
@@ -99,7 +111,7 @@ module.exports = {
                 .setLabel('✖')
                 .setStyle(ButtonStyle.Danger);
               const refreshBtn = new ButtonBuilder()
-                .setCustomId(`refresh-${id}${results[0].name}`)
+                .setCustomId(`refresh-${id}${results[0].name}${Number(nsfw)}`)
                 .setLabel('↻')
                 .setStyle(ButtonStyle.Primary);
               const row = new ActionRowBuilder();
@@ -108,7 +120,7 @@ module.exports = {
                 row.addComponents(refreshBtn,deleteBtn);
               } else {
                 const backBtn = new ButtonBuilder()
-                  .setCustomId(`hb${id}`)
+                  .setCustomId(`hb${id}${Number(nsfw)}`)
                   .setLabel('<')
                   .setStyle(ButtonStyle.Secondary)
                 row.addComponents(backBtn,refreshBtn,deleteBtn);
@@ -125,10 +137,10 @@ module.exports = {
                 }
                 if (r) {
                   con.execute(`UPDATE history SET forward_post=? WHERE id=?`, [id,refresh.previous], (err, r) => {
-                    console.log(r);
+                    //console.log(r);
                   });
                 }
-                console.log(results);
+                //console.log(results);
               });
 
             } else await interaction.editReply({content: ':frowning: Failed to fetch image'});
@@ -187,7 +199,7 @@ module.exports = {
               const co = interaction.message.components[0].components.map((button) => ButtonBuilder.from(button).setDisabled(true));
               const row = new ActionRowBuilder().setComponents(co);
               await interaction.update({components: [row]});
-              await this.execute(interaction,client,con,stats,{value: interaction.customId.substring(24), previous: interaction.customId.substring(8,24)});
+              await this.execute(interaction,client,con,stats,{value: interaction.customId.substring(24,interaction.customId.length-1), previous: interaction.customId.substring(8,24), nsfw: Boolean(Number(interaction.customId.substring(interaction.customId.length-1)))});
             } else {
               await interaction.reply({ content: "You can't refresh an old fetch!", flags: MessageFlags.Ephemeral });
             }
@@ -204,11 +216,12 @@ module.exports = {
                 sql += "forward_post=?"
                 break;
             }
-            con.execute(sql, [interaction.customId.substring(2)], async (err, results) => {
+            con.execute(sql, [interaction.customId.substring(2,interaction.customId.length-1)], async (err, results) => {
               if (err) reject(err)
               resolve(results[0]);
             });
           }));
+          const nsfw = Number(interaction.customId.substring(interaction.customId.length-1));
           const frwdBtn = new ButtonBuilder()
             .setCustomId(`ZPh1`)
             .setLabel('>')
@@ -220,17 +233,17 @@ module.exports = {
 
           if (result.backward_post == null) {
             backBtn.setDisabled(true);
-            frwdBtn.setCustomId(`hf${result.id}`);
+            frwdBtn.setCustomId(`hf${result.id}${nsfw}`);
           } else {
-            backBtn.setCustomId(`hb${result.id}`);
+            backBtn.setCustomId(`hb${result.id}${nsfw}`);
             if (result.forward_post == null)
               //No parent
               frwdBtn
-                .setCustomId(`refresh-${result.id}${result.value}`)
+                .setCustomId(`refresh-${result.id}${result.value}${nsfw}`)
                 .setLabel('↻')
                 .setStyle(ButtonStyle.Primary);
             else
-              frwdBtn.setCustomId(`hf${result.id}`);
+              frwdBtn.setCustomId(`hf${result.id}${nsfw}`);
           }
           const row = new ActionRowBuilder().addComponents(backBtn, frwdBtn);
           const Embed = new EmbedBuilder(JSON.parse(result.embed));
