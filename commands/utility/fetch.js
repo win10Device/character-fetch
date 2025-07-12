@@ -62,8 +62,8 @@ module.exports = {
             const cn = interaction.options["_hoistedOptions"].find((x) => x.name == 'nsfw');
             a = (typeof(cv) !== 'undefined') ? cv.value : null;
             nsfw = (typeof(cn) !== 'undefined') ? cn.value : false;
-            if (nsfw)
-              if (interaction.hasOwnProperty('nsfw')) {
+            if (nsfw) {
+              if (interaction.channel) {
                 if (!interaction.channel.nsfw && a != null) {
                   await interaction.editReply({content: "You cannot fetch an NSFW image here!"});
                   return;
@@ -72,6 +72,7 @@ module.exports = {
                 await interaction.editReply({content: "You can't fetch an NSFW here because it's unknown if this channel is NSFW"});
                 return;
               }
+            }
           }
         }
       } else {
