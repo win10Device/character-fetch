@@ -100,9 +100,9 @@ async function Gelbooru(c,config,nsfw) {
             blocked.push(tag);
           }
         });
-        if (!(["jpg","jpeg","gif","png","webp"]).includes(item.file_url)) delete response.data[index];
-        if (item.tags.includes("video")) delete response.data[index];
-        if (item.tags.includes("comic")) delete response.data[index];
+        if (!(["jpg","jpeg","gif","png","webp"]).includes(item.file_url)) delete response.data.post[index];
+        if (item.tags.includes("video")) delete response.data.post[index];
+        if (item.tags.includes("comic")) delete response.data.post[index];
       });
       response.data.post = response.data.post.filter(item => (typeof(item.id)!=='undefined'));
       if (response.data.post.length<=0) count++;
