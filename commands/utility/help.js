@@ -3,7 +3,7 @@ const { SlashCommandBuilder, MessageFlags } = require('discord.js');
 module.exports = {
 	data: new SlashCommandBuilder()
 		.setName('help')
-		.setDescription(''),
+		.setDescription('a'),
 	async execute(interaction, client, con, stats) {
           const commands = client.lcommands;
           await interaction.reply(
