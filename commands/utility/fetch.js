@@ -155,8 +155,8 @@ module.exports = {
           }
         });
       } else {
-        const command = client.lcommands.find((x) => x.name == 'characters');
-        interaction.editReply({content: `Hi!\nYou can see the list of characters by using </characters:${command.id}>`})
+        const command = client.lcommands.find((x) => x.name == 'help');
+        interaction.editReply({content: `Hi!\nYou can get help on commands using </help:${command.id}>`})
       }
     } catch (error) {
       console.log(error);
