@@ -56,6 +56,7 @@ function scan() {
         if (isNaN(updated_at)) updated_at = 1;
         if (Math.abs(time - updated_at) >= 2629800) {
           for (let i = 0; i <= 1; i++) {
+            if (i==1 && ch.bn) continue;
             Object.keys(meta).forEach(async (key) => {
               switch (key) {
                 case 'danbooru':
